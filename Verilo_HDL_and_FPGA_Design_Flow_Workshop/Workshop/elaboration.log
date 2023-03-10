@@ -1,0 +1,26 @@
+Active-HDL 13.0.376.8320 2023-03-10 23:38:39
+
+Elaboration top modules:
+Verilog Module                TB
+
+
+--------------------------------------------------------------------------------------------
+Verilog Module          | Library  | Info | Compiler Version          | Compilation Options
+--------------------------------------------------------------------------------------------
+TB                      | workshop |      | 13.0.376.8320 (Windows64) | -O2 -sv2k12
+wallace_tree_multiplier | workshop |      | 13.0.376.8320 (Windows64) | -O2 -sv2k12
+half_adder              | workshop |      | 13.0.376.8320 (Windows64) | -O2 -sv2k12
+full_adder              | workshop |      | 13.0.376.8320 (Windows64) | -O2 -sv2k12
+--------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------
+Library                 | Comment
+--------------------------------------------------------------------------------------------
+workshop                | None
+--------------------------------------------------------------------------------------------
+
+
+Simulation Options: asim -O5 +access +w_nets +access +r +access +r+w TB
+
+
+The performance of simulation is reduced. Version Student Edition
