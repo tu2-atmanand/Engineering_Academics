@@ -1,0 +1,6 @@
+Desing a centred tap fuls wave rectifier ckt using a capacitor filter to give a dc optu voltag of 12v wit Rl= 100ohm and ripple factor not exceeding 0.014. Find C
+
+R=1/[4*root(3)*Fo*C*Rl]
+
+1000 microFarad 25v
+220 ohm 
