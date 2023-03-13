@@ -1011,7 +1011,7 @@ In Quartus
 FPGA Developement board is to learn and proctice. The actual FPGA chip is very small and we will have to develope our special board to attach that chip for our specific application.
 Cyclone 4 is the chip used
 
-
+-> The actual CPU in our PC can be said as a huge ASIC itself, since it is designed to do the specific tasks. The simulations we are doing, which is running the code, firmware is not at all fast, the arduino and all this things are simulations, but FPGA, which is designing the hardware itself for the specific task is the real speed and power efficient.
 
 
 

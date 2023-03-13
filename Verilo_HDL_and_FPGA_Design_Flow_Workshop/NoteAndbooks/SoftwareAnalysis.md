@@ -2,6 +2,7 @@
 
 ### 1. ModelSim
 This is like the king of simulation, most of the other Software whose GUI may be good use this simulation engine as backEnd. So only nice engine, and actually the only engine i have for lightweight simulation. But the GUI is very bad, very laggy, not responsive, Also the simulation process is very long and bad and the text editor is also very bad.
+One more con of this, it creates .bak files for each of the edited file, and creates complete mess in the working directory.
 
 ### 2. VHDPlus
 This is very nice good looking, it solves the Text editor problem from ModelSim, but for when press simulate loads the same window, which is laggy, but good dark looking though.
