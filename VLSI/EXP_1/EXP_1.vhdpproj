@@ -1,0 +1,20 @@
+﻿<Project>
+  <ItemGroup>
+    <File Include="FA_Behavioral.vhd" />
+    <File Include="FA_Behavioral_tb.vhd" />
+    <File Include="FA_Dataflow.vhd" />
+    <File Include="FA_Dataflow_tb.vhd" />
+    <File Include="FA_Structural.vhd" />
+    <File Include="FA_Structural_tb.vhd" />
+    <File Include="HA_Behavioral.vhd" />
+    <File Include="HA_Behavioral_tb.vhd" />
+    <File Include="HA_Dataflow.vhd" />
+    <File Include="HA_Dataflow_tb.vhd" />
+    <File Include="HA_Dataflow_tb2.vhd" />
+    <File Include="HA_Structural.vhd" />
+    <File Include="HA_Structural_tb.vhd" />
+  </ItemGroup>
+  <PropertyGroup>
+    <HardwareStartPath>EXP_1.vhd</HardwareStartPath>
+  </PropertyGroup>
+</Project>
