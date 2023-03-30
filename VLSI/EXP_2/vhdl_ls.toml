@@ -1,0 +1,32 @@
+# auto-generated
+[Libraries]
+work.files = [
+	'Demux_Behavioral.vhd',
+	'Demux_Behavioral_tb.vhd',
+	'Demux_Dataflow.vhd',
+	'Demux_Dataflow_tb.vhd',
+	'Demux_Structural.vhd',
+	'Demux_Structural_tb.vhd',
+	'Mux_Behavioral.vhd',
+	'Mux_Behavioral_tb.vhd',
+	'Mux_Dataflow.vhd',
+	'Mux_Dataflow_tb.vhd',
+	'Mux_Structural.vhd',
+	'Mux_Structural_tb.vhd'
+]
+[libraries.work]
+files = [
+	'Demux_Behavioral.vhd',
+	'Demux_Behavioral_tb.vhd',
+	'Demux_Dataflow.vhd',
+	'Demux_Dataflow_tb.vhd',
+	'Demux_Structural.vhd',
+	'Demux_Structural_tb.vhd',
+	'Mux_Behavioral.vhd',
+	'Mux_Behavioral_tb.vhd',
+	'Mux_Dataflow.vhd',
+	'Mux_Dataflow_tb.vhd',
+	'Mux_Structural.vhd',
+	'Mux_Structural_tb.vhd'
+]
+# auto-generated-end
