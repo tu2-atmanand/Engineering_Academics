@@ -1,0 +1,24 @@
+# auto-generated
+[Libraries]
+work.files = [
+	'Decoder_Dataflow.vhd',
+	'Decoder_Dataflow_tb.vhd',
+	'EXP_3.vhd',
+	'EXP_3_tb.vhd',
+	'Encoder_Behavioral.vhd',
+	'Encoder_Behavioral_tb.vhd',
+	'Encoder_Dataflow.vhd',
+	'Encoder_Dataflow_tb.vhd'
+]
+[libraries.work]
+files = [
+	'Decoder_Dataflow.vhd',
+	'Decoder_Dataflow_tb.vhd',
+	'EXP_3.vhd',
+	'EXP_3_tb.vhd',
+	'Encoder_Behavioral.vhd',
+	'Encoder_Behavioral_tb.vhd',
+	'Encoder_Dataflow.vhd',
+	'Encoder_Dataflow_tb.vhd'
+]
+# auto-generated-end
