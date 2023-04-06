@@ -20,3 +20,6 @@ begin
         end if;
     end process;
 end Behavioral;
+
+
+-- for only structural its 4x2 and 2x4, and for rest its 8x3 and 3x8

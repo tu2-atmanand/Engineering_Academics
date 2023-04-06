@@ -36,18 +36,17 @@ BEGIN
     );
     stim_proc: process
     begin
-        wait for 100 ns;
         A <= '1';
         B <= '0';
         C <= '1';
         D <= '0';
         S0 <= '0'; S1 <= '0';
         wait for 5 ns;
+        S0 <= '0'; S1 <= '1';
+        wait for 5 ns;
         S0 <= '1'; S1 <= '0';
         wait for 5 ns;
-        S0 <= '0'; S1 <= '1';
-        wait for 5 ns;
-        S0 <= '0'; S1 <= '1';
+        S0 <= '1'; S1 <= '1';
         wait for 5 ns;
     end process;
 
