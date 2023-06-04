@@ -1,0 +1,11 @@
+﻿<Project>
+  <ItemGroup>
+    <File Include="EXP_7.vhd" />
+    <File Include="EXP_7_tb.vhd" />
+    <File Include="RCA.vhd" />
+    <File Include="RCA_tb.vhd" />
+  </ItemGroup>
+  <PropertyGroup>
+    <HardwareStartPath>EXP_7.vhd</HardwareStartPath>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,16 @@
+# auto-generated
+[Libraries]
+work.files = [
+	'EXP_7.vhd',
+	'EXP_7_tb.vhd',
+	'RCA.vhd',
+	'RCA_tb.vhd'
+]
+[libraries.work]
+files = [
+	'EXP_7.vhd',
+	'EXP_7_tb.vhd',
+	'RCA.vhd',
+	'RCA_tb.vhd'
+]
+# auto-generated-end
