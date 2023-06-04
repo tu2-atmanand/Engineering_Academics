@@ -1,0 +1,82 @@
+<config>
+    <version>
+        3.1
+    </version>
+    <comment>
+    </comment>
+    <databases>
+        <database id="">*virtual*</database>
+        <database id="7412b3a3762bf0657c64329e2b000300">FIFO_Wave.asdb</database>
+    </databases>
+    <gridshown/>
+    <signallists>
+        <signallist id="0">
+        <signal>/tb_fifo_32/clk</signal>
+        <signal>/tb_fifo_32/rst_n</signal>
+        <signal>/tb_fifo_32/wr</signal>
+        <signal>/tb_fifo_32/rd</signal>
+        <signal>/tb_fifo_32/data_in</signal>
+        <signal>/tb_fifo_32/data_out</signal>
+        <signal>/tb_fifo_32/fifo_empty</signal>
+        <signal>/tb_fifo_32/fifo_full</signal>
+        <signal>/tb_fifo_32/fifo_threshold</signal>
+        <signal>/tb_fifo_32/fifo_overflow</signal>
+        <signal>/tb_fifo_32/fifo_underflow</signal>
+        <signal>/tb_fifo_32/i</signal>
+        <signal>/tb_fifo_32/waddr</signal>
+        <signal>/tb_fifo_32/raddr</signal>
+        <signal>/tb_fifo_32/mem</signal>
+        <signal>/tb_fifo_32/ENDTIME</signal>
+        </signallist>
+        <signallist id="1">
+        <signal>/tb_fifo_32/clk</signal>
+        <signal>/tb_fifo_32/rst_n</signal>
+        <signal>/tb_fifo_32/wr</signal>
+        <signal>/tb_fifo_32/rd</signal>
+        <signal>/tb_fifo_32/data_in</signal>
+        <signal>/tb_fifo_32/data_out</signal>
+        <signal>/tb_fifo_32/fifo_empty</signal>
+        <signal>/tb_fifo_32/fifo_full</signal>
+        <signal>/tb_fifo_32/fifo_threshold</signal>
+        <signal>/tb_fifo_32/fifo_overflow</signal>
+        <signal>/tb_fifo_32/fifo_underflow</signal>
+        <signal>/tb_fifo_32/i</signal>
+        <signal>/tb_fifo_32/waddr</signal>
+        <signal>/tb_fifo_32/raddr</signal>
+        <signal>/tb_fifo_32/mem</signal>
+        <signal>/tb_fifo_32/ENDTIME</signal>
+        </signallist>
+    </signallists>
+    <timebases>
+        <timebase id="0">
+            <time start_time="0" end_time="40987" />
+        </timebase>
+    </timebases>
+    <prefbases>
+        <prefbase id="0" >
+        </prefbase>
+        <prefbase id="1" >
+        </prefbase>
+    </prefbases>
+    <bookmarkbases>
+        <bookmarks id="0">
+        </bookmarks>
+        <bookmarks id="1">
+        </bookmarks>
+    </bookmarkbases>
+    <cursorbases>
+        <cursors id="0">
+            <cursor value="16591" label="Cursor 1" locked="0" />
+        </cursors>
+    </cursorbases>
+    <measurementbases>
+    </measurementbases>
+    <commentbases>
+        <comments id="0">
+        </comments>
+    </commentbases>
+    <views>
+        <view signallist="0" propertybase="0" prefbase="0" type="1" bookmarks="0" cursors="0" measurements="-1" comments="-1" />
+        <view signallist="1" propertybase="1" prefbase="1" type="2" bookmarks="1" cursors="0" measurements="-1" comments="-1" />
+    </views>
+</config>
