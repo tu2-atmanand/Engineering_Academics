@@ -1,0 +1,28 @@
+# auto-generated
+[Libraries]
+work.files = [
+	'EXP_6.vhd',
+	'EXP_6_tb.vhd',
+	'PIPO.vhd',
+	'PIPO_tb.vhd',
+	'PISO.vhd',
+	'PISO_tb.vhd',
+	'SIPO.vhd',
+	'SIPO_tb.vhd',
+	'SISO.vhd',
+	'SISO_tb.vhd'
+]
+[libraries.work]
+files = [
+	'EXP_6.vhd',
+	'EXP_6_tb.vhd',
+	'PIPO.vhd',
+	'PIPO_tb.vhd',
+	'PISO.vhd',
+	'PISO_tb.vhd',
+	'SIPO.vhd',
+	'SIPO_tb.vhd',
+	'SISO.vhd',
+	'SISO_tb.vhd'
+]
+# auto-generated-end
