@@ -1,0 +1,11 @@
+﻿<Project>
+  <ItemGroup>
+    <File Include="EXP_5.vhd" />
+    <File Include="EXP_5_tb.vhd" />
+    <File Include="UpDownCounterBehav.vhd" />
+    <File Include="UpDownCounterBehav_tb.vhd" />
+  </ItemGroup>
+  <PropertyGroup>
+    <HardwareStartPath>EXP_5_tb.vhd</HardwareStartPath>
+  </PropertyGroup>
+</Project>
