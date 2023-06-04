@@ -1,30 +1,53 @@
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-use IEEE.STD_LOGIC_ARITH.ALL;
-use IEEE.STD_LOGIC_UNSIGNED.ALL;
+library ieee;
+use ieee.std_logic_1164.all;
 
-entity encoder_behavioural_tb is
-end entity;
-architecture tb of encoder_behavioural_tb is
-    component enc_B is
-        Port ( I : in STD_LOGIC_VECTOR (3 downto 0);
-            Y : out STD_LOGIC_VECTOR (1 downto 0));
-    end component;
-    signal I: STD_LOGIC_VECTOR(3 downto 0);
-    signal Y: STD_LOGIC_VECTOR(1 downto 0);
+entity encoder8_3_B_tb is
+end;
+
+architecture bench of encoder8_3_B_tb is
+  -- Component declaration for the encoder
+    component encoder8_3_B
+    port (
+        en   : in  std_logic;
+        a_in : in  std_logic_vector (7 downto 0);
+        y_op : out std_logic_vector (2 downto 0)
+    );
+end component;
+
+  -- Testbench signals
+signal en   : std_logic := '0';
+signal a_in : std_logic_vector (7 downto 0) := (others => '0');
+signal y_op : std_logic_vector (2 downto 0);
+
 begin
-    uut: enc_B port map(
-        I => I, Y => Y);
-    stim: process
+  -- Instantiate the encoder
+    uut: encoder8_3_B port map (en => en, a_in => a_in, y_op => y_op);
+
+  -- Stimulus process
+    stimulus: process
     begin
-        I <= "0001";
-        wait for 20 ns;
-        I <= "0010";
-        wait for 20 ns;
-        I <= "0100";
-        wait for 20 ns;
-        I <= "1000";
-        wait for 20 ns;
+    -- Enable the encoder
+        en <= '0';
+
+    -- Send input to the encoder and wait for 20 ns
+        a_in <= "00000001"; wait for 20 ns;
+        a_in <= "00000010"; wait for 20 ns;
+        a_in <= "00000100"; wait for 20 ns;
+        a_in <= "00001000"; wait for 20 ns;
+        a_in <= "00010000"; wait for 20 ns;
+        a_in <= "00100000"; wait for 20 ns;
+        a_in <= "01000000"; wait for 20 ns;
+        a_in <= "10000000"; wait for 20 ns;
+
+    -- Disable the encoder and wait for 20 ns
+        en <= '1'; wait for 20 ns;
+
+    -- Send more input to the encoder and wait for 20 ns
+        a_in <= "00000001"; wait for 20 ns;
+        a_in <= "00000010"; wait for 20 ns;
+        a_in <= "00000100"; wait for 20 ns;
+
+    -- End the simulation
         wait;
     end process;
-end tb;
+end bench;

@@ -1,32 +1,64 @@
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-use IEEE.STD_LOGIC_ARITH.ALL;
-use IEEE.STD_LOGIC_UNSIGNED.ALL;
+Library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.std_logic_arith.all;
+use IEEE.std_logic_unsigned.all;
 
-entity decoder_behavioral_tb is
-end entity;
+entity decoder_2x4_D_tb is
+end decoder_2x4_D_tb;
+architecture dataflow of decoder_2x4_D_tb is
+    component decoder_2x4_D
+    port(A,B: in std_logic;
+        Y: out std_logic_vector(3 downto 0));
+end component;
 
-architecture tb of decoder_behavioral_tb is
-    component dec_D is
-        Port ( A,B : in STD_LOGIC;
-            Y3,Y2,Y1,Y0 : out STD_LOGIC);
-    end component;
-    signal A, B, Y3, Y2, Y1, Y0 : STD_LOGIC;
+signal A,B:STD_LOGIC := '0';
+signal Y:STD_LOGIC_VECTOR(3 downto 0);
 begin
-    uut: dec_D port map(
-        A => A, B => B,
-        Y0 => Y0, Y1 => Y1,
-        Y2 => Y2, Y3 => Y3);
-    stim: process
-    begin
-        A <= '0';B <= '0';
-        wait for 20 ns;
-        A <= '0';B <= '1';
-        wait for 20 ns;
-        A <= '1';B <= '0';
-        wait for 20 ns;
-        A <= '1';B <= '1';
-        wait for 20 ns;
-        wait;
-    end process;
-end tb;
+    DECODE:decoder_2x4_D port map(A,B,Y);
+    A <= not A after 20 ns;
+    B <= not B after 10 ns;
+
+end dataflow;
+
+
+
+
+
+
+
+
+
+
+
+--library ieee;
+--use ieee.std_logic_1164.all;
+--
+--entity decoder_3x8_df_tb is
+--end entity;
+--
+--architecture tb of decoder_3x8_df_tb is
+--    component decoder_3x8_df is
+--        port (
+--            I : in std_logic_vector(2 downto 0);
+--            y : out std_logic_vector(7 downto 0)
+--        );
+--    end component;
+--
+--    signal I : std_logic_vector(2 downto 0) := "000";
+--    signal y : std_logic_vector(7 downto 0);
+--
+--begin
+--    uut: decoder_3x8_df port map (I => I, y => y);
+--
+--    process
+--    begin
+--        for i in 0 to 7 loop
+--            I <= std_logic_vector(to_unsigned(i, 3));
+--            wait for 10 ns;
+--            assert y(i) = '1' report "Error: Unexpected output value" severity error;
+--            y <= (others => '0');
+--        end loop;
+--        wait;
+--    end process;
+--end architecture;
+--

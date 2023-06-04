@@ -1,14 +1,15 @@
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-use IEEE.STD_LOGIC_ARITH.ALL;
-use IEEE.STD_LOGIC_UNSIGNED.ALL;
+Library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.std_logic_arith.all;
+use IEEE.std_logic_unsigned.all;
 
-entity enc_D is
-    Port ( A,B,C,D : in  STD_LOGIC;
-        Y0,Y1 : out  STD_LOGIC);
-end enc_D;
-architecture dataflow of enc_D is
+entity encoder_4x2_D is
+    port(A,B,C,D: in std_logic;
+        Y: out std_logic_vector(1 downto 0));
+end encoder_4x2_D;
+
+architecture dataflow of encoder_4x2_D is
 begin
-    Y0 <= ((not C)and(not D))and(A xor B);
-    Y1 <= ((not B)and(not D))and(A xor C);
+    Y(1) <= A or B;
+    Y(0) <= A or C;
 end dataflow;
