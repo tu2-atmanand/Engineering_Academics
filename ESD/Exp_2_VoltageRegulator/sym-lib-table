@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name "New_Library_0")(type "KiCad")(uri "D:/Programming/KiCAD/Temp/New_Library_0.kicad_sym")(options "")(descr ""))
+  (lib (name "temp")(type "KiCad")(uri "D:/Programming/KiCAD/Temp/temp.kicad_sym")(options "")(descr ""))
+)
