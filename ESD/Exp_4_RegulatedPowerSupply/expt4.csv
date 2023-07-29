@@ -1,0 +1,10 @@
+Ref,Qnty,Value,Cmp name,Footprint
+C1,1,1000uf,C,Capacitor_THT:C_Radial_D12.5mm_H20.0mm_P5.00mm
+C2,1,0.1uf,C,Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm
+C3,1,10uf,C,Capacitor_THT:C_Radial_D5.0mm_H11.0mm_P2.00mm
+C4,1,470uf,C,Capacitor_THT:C_Radial_D10.0mm_H12.5mm_P5.00mm
+"D1, D2, D3, D4, D5, D6",6,1N4007,1N4007,Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal
+"J1, J2",2,Screw_Terminal_01x02,Screw_Terminal_01x02,"TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal"
+R1,1,220,R,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
+RV1,1,R_Potentiometer,R_Potentiometer,Potentiometer_THT:Potentiometer_Runtron_RM-065_Vertical
+U1,1,LM317_TO-220,LM317_TO-220,Package_TO_SOT_THT:TO-220-3_Vertical
