@@ -1,0 +1,137 @@
+{
+  "main": {
+    "id": "3615897df12b05e7",
+    "type": "split",
+    "children": [
+      {
+        "id": "b324038a77fdd6c6",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Physical-Design-with-OpenLANE-using-SKY130-PDK-main/README.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "dc28e90f8c82b178",
+    "type": "split",
+    "children": [
+      {
+        "id": "bb336383567ca32e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "88868322d5bcf8fa",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "8f7699d3b0245812",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "9033e83813b35137",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 290.5
+  },
+  "right": {
+    "id": "d954c043d435dbaf",
+    "type": "split",
+    "children": [
+      {
+        "id": "d12cc147f314f014",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c72c5260d2421a1c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Physical-Design-with-OpenLANE-using-SKY130-PDK-main/README.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "096c08836805f2ea",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Physical-Design-with-OpenLANE-using-SKY130-PDK-main/README.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "601838518d4cbb87",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "8c7148401cd567ef",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Physical-Design-with-OpenLANE-using-SKY130-PDK-main/README.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "b324038a77fdd6c6",
+  "lastOpenFiles": [
+    "OpenLANE-Sky130-Physical-Design-Workshop-main/README.md",
+    "Physical-Design-with-OpenLANE-using-SKY130-PDK-main/README.md",
+    "SoftwareAnalysis.md"
+  ]
+}

@@ -1,0 +1,32 @@
+# auto-generated
+[Libraries]
+work.files = [
+	'Decoder_Behavioural.vhd',
+	'Decoder_Behavioural_tb.vhd',
+	'Decoder_Dataflow.vhd',
+	'Decoder_Dataflow_tb.vhd',
+	'Decoder_Structural.vhd',
+	'Decoder_Structural_tb.vhd',
+	'Encoder_Behavioral.vhd',
+	'Encoder_Behavioral_tb.vhd',
+	'Encoder_Dataflow.vhd',
+	'Encoder_Dataflow_tb.vhd',
+	'Encoder_Structural.vhd',
+	'Encoder_Structural_tb.vhd'
+]
+[libraries.work]
+files = [
+	'Decoder_Behavioural.vhd',
+	'Decoder_Behavioural_tb.vhd',
+	'Decoder_Dataflow.vhd',
+	'Decoder_Dataflow_tb.vhd',
+	'Decoder_Structural.vhd',
+	'Decoder_Structural_tb.vhd',
+	'Encoder_Behavioral.vhd',
+	'Encoder_Behavioral_tb.vhd',
+	'Encoder_Dataflow.vhd',
+	'Encoder_Dataflow_tb.vhd',
+	'Encoder_Structural.vhd',
+	'Encoder_Structural_tb.vhd'
+]
+# auto-generated-end

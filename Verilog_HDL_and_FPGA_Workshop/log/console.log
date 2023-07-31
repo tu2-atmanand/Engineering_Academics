@@ -1,0 +1,2543 @@
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+alog -O2 -sve -msg 5 -sv2k12 -work Workshop $dsn/src/DivideBy_8.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Info: VCP2876 DivideBy_8.v : (48, 59): Implicit net declaration, symbol t_clk_out has not been declared in module divideBy_8_tb.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: divideBy_8_tb.
+# $root top modules: divideBy_8_tb tb_fifo_32 dff tff_tb TrafficLights_tb fifo_mem Nand VectorExp mux_4to1_assign mux_4to1_UsingIf mux_4to1_UsingCase f_add rippe_adder sum mux8_usingCase forLoopexp up_down_counter up_counter FSM_2 TwoMHz_tb FSM_pattern_2 singlePortMem dualPortMem TB.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +w_nets +access +r +access +r+w divideBy_8_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.6 [s]
+# SLP: Finished : 0.7 [s]
+# SLP: 0 primitives and 4 (100.00%) other processes in SLP
+# SLP: 0 signals in SLP and 7 (100.00%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.7 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5371 kB (elbread=427 elab2=4809 kernel=134 sdf=0)
+# KERNEL: ASDB file was created in location D:\Github_or_Gitlab\MY_Github\Engineering_Academics\Verilog_HDL_and_FPGA_Workshop\src\wave.asdb
+#  15:30, 04 June 2023
+#  Simulation has been initialized
+# add wave -noreg {/divideBy_8_tb/U1/clk_out}
+# add wave -noreg {/divideBy_8_tb/U1/clk}
+# add wave -noreg {/divideBy_8_tb/U1/rst_n}
+# add wave -noreg {/divideBy_8_tb/U1/count}
+# VSIM: 4 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'D:/Github_or_Gitlab/MY_Github/Engineering_Academics/Verilog_HDL_and_FPGA_Workshop/src/wave.asdb'.
+run
+endsim
+# KERNEL: stopped at time: 4901780 ns
+# VSIM: Simulation has finished.
+asim -O5 +access +w_nets +access +r +access +r+w divideBy_8_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 0 primitives and 4 (100.00%) other processes in SLP
+# SLP: 0 signals in SLP and 7 (100.00%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5371 kB (elbread=427 elab2=4809 kernel=134 sdf=0)
+# KERNEL: ASDB file was created in location D:\Github_or_Gitlab\MY_Github\Engineering_Academics\Verilog_HDL_and_FPGA_Workshop\src\wave.asdb
+#  15:32, 04 June 2023
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'D:/Github_or_Gitlab/MY_Github/Engineering_Academics/Verilog_HDL_and_FPGA_Workshop/src/wave.asdb'.
+run @100ns
+# KERNEL: stopped at time: 100 ns
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +w_nets +access +r +access +r+w divideBy_8_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 0 primitives and 4 (100.00%) other processes in SLP
+# SLP: 0 signals in SLP and 7 (100.00%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5371 kB (elbread=427 elab2=4809 kernel=134 sdf=0)
+# KERNEL: ASDB file was created in location D:\Github_or_Gitlab\MY_Github\Engineering_Academics\Verilog_HDL_and_FPGA_Workshop\src\wave.asdb
+#  15:32, 04 June 2023
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'D:/Github_or_Gitlab/MY_Github/Engineering_Academics/Verilog_HDL_and_FPGA_Workshop/src/wave.asdb'.
+run @100ns
+# KERNEL: stopped at time: 100 ns
+run @600ns
+# KERNEL: stopped at time: 600 ns
+endsim
+# VSIM: Simulation has finished.
+# Memory View: Error: You do not have a valid license to run Memory View. Contact Aldec for ordering information - sales@aldec.com
+alog -O2 -sve -msg 5 -sv2k12 -work Workshop $dsn/src/FIFO.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Warning: VCP2641 FIFO.v : (36, 23): Redundant digits given in number 5'b000000.
+# Warning: VCP2641 FIFO.v : (38, 20): Redundant digits given in number 5'b000001.
+# Warning: VCP2641 FIFO.v : (93, 23): Redundant digits given in number 5'b000000.
+# Warning: VCP2641 FIFO.v : (95, 20): Redundant digits given in number 5'b000001.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: tb_fifo_32.
+# $root top modules: divideBy_8_tb tb_fifo_32 dff tff_tb TrafficLights_tb Nand VectorExp mux_4to1_assign mux_4to1_UsingIf mux_4to1_UsingCase f_add rippe_adder sum mux8_usingCase forLoopexp up_down_counter up_counter FSM_2 TwoMHz_tb FSM_pattern_2 singlePortMem dualPortMem TB.
+# Compile success 0 Errors 4 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: ELBREAD_0049 Module 'fifo_mem' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: ELBREAD_0049 Module 'write_pointer' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: ELBREAD_0049 Module 'read_pointer' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: ELBREAD_0049 Module 'memory_array' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: ELBREAD_0049 Module 'status_signal' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +w_nets +access +r +access +r+w tb_fifo_32
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: ELBREAD_0049 Module 'fifo_mem' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: ELBREAD_0049 Module 'write_pointer' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: ELBREAD_0049 Module 'read_pointer' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: ELBREAD_0049 Module 'memory_array' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: ELBREAD_0049 Module 'status_signal' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 10ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.5 [s]
+# SLP: Finished : 0.6 [s]
+# SLP: 0 primitives and 16 (100.00%) other processes in SLP
+# SLP: 6 (8.22%) signals in SLP and 67 (91.78%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.6 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5402 kB (elbread=427 elab2=4840 kernel=134 sdf=0)
+# KERNEL: ASDB file was created in location D:\Github_or_Gitlab\MY_Github\Engineering_Academics\Verilog_HDL_and_FPGA_Workshop\src\wave.asdb
+#  15:52, 04 June 2023
+#  Simulation has been initialized
+# add wave -noreg {/tb_fifo_32/clk}
+# add wave -noreg {/tb_fifo_32/rst_n}
+# add wave -noreg {/tb_fifo_32/wr}
+# add wave -noreg {/tb_fifo_32/rd}
+# add wave -noreg {/tb_fifo_32/data_in}
+# add wave -noreg {/tb_fifo_32/data_out}
+# add wave -noreg {/tb_fifo_32/fifo_empty}
+# add wave -noreg {/tb_fifo_32/fifo_full}
+# add wave -noreg {/tb_fifo_32/fifo_threshold}
+# add wave -noreg {/tb_fifo_32/fifo_overflow}
+# add wave -noreg {/tb_fifo_32/fifo_underflow}
+# add wave -noreg {/tb_fifo_32/i}
+# add wave -noreg {/tb_fifo_32/waddr}
+# add wave -noreg {/tb_fifo_32/raddr}
+# add wave -noreg {/tb_fifo_32/mem}
+# add wave -noreg {/tb_fifo_32/ENDTIME}
+# VSIM: 16 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'D:/Github_or_Gitlab/MY_Github/Engineering_Academics/Verilog_HDL_and_FPGA_Workshop/src/wave.asdb'.
+# add wave -noreg {/tb_fifo_32/clk}
+# add wave -noreg {/tb_fifo_32/rst_n}
+# add wave -noreg {/tb_fifo_32/wr}
+# add wave -noreg {/tb_fifo_32/rd}
+# add wave -noreg {/tb_fifo_32/data_in}
+# add wave -noreg {/tb_fifo_32/data_out}
+# add wave -noreg {/tb_fifo_32/fifo_empty}
+# add wave -noreg {/tb_fifo_32/fifo_full}
+# add wave -noreg {/tb_fifo_32/fifo_threshold}
+# add wave -noreg {/tb_fifo_32/fifo_overflow}
+# add wave -noreg {/tb_fifo_32/fifo_underflow}
+# add wave -noreg {/tb_fifo_32/i}
+# add wave -noreg {/tb_fifo_32/waddr}
+# add wave -noreg {/tb_fifo_32/raddr}
+# add wave -noreg {/tb_fifo_32/mem}
+# add wave -noreg {/tb_fifo_32/ENDTIME}
+# KERNEL: Warning: KERNEL_0291 Object "/tb_fifo_32/clk" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/tb_fifo_32/rst_n" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/tb_fifo_32/wr" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/tb_fifo_32/rd" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/tb_fifo_32/data_in" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/tb_fifo_32/data_out" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/tb_fifo_32/fifo_empty" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/tb_fifo_32/fifo_full" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/tb_fifo_32/fifo_threshold" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/tb_fifo_32/fifo_overflow" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/tb_fifo_32/fifo_underflow" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/tb_fifo_32/i" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/tb_fifo_32/waddr" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/tb_fifo_32/raddr" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/tb_fifo_32/mem" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/tb_fifo_32/ENDTIME" has already been traced.
+# VSIM: 0 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'D:/Github_or_Gitlab/MY_Github/Engineering_Academics/Verilog_HDL_and_FPGA_Workshop/src/wave.asdb'.
+# add wave -noreg {/tb_fifo_32/clk}
+# add wave -noreg {/tb_fifo_32/rst_n}
+# add wave -noreg {/tb_fifo_32/wr}
+# add wave -noreg {/tb_fifo_32/rd}
+# add wave -noreg {/tb_fifo_32/data_in}
+# add wave -noreg {/tb_fifo_32/data_out}
+# add wave -noreg {/tb_fifo_32/fifo_empty}
+# add wave -noreg {/tb_fifo_32/fifo_full}
+# add wave -noreg {/tb_fifo_32/fifo_threshold}
+# add wave -noreg {/tb_fifo_32/fifo_overflow}
+# add wave -noreg {/tb_fifo_32/fifo_underflow}
+# add wave -noreg {/tb_fifo_32/i}
+# add wave -noreg {/tb_fifo_32/waddr}
+# add wave -noreg {/tb_fifo_32/raddr}
+# add wave -noreg {/tb_fifo_32/mem}
+# add wave -noreg {/tb_fifo_32/ENDTIME}
+# KERNEL: Warning: KERNEL_0291 Object "/tb_fifo_32/clk" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/tb_fifo_32/rst_n" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/tb_fifo_32/wr" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/tb_fifo_32/rd" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/tb_fifo_32/data_in" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/tb_fifo_32/data_out" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/tb_fifo_32/fifo_empty" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/tb_fifo_32/fifo_full" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/tb_fifo_32/fifo_threshold" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/tb_fifo_32/fifo_overflow" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/tb_fifo_32/fifo_underflow" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/tb_fifo_32/i" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/tb_fifo_32/waddr" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/tb_fifo_32/raddr" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/tb_fifo_32/mem" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/tb_fifo_32/ENDTIME" has already been traced.
+# VSIM: 0 object(s) traced.
+run @500ns
+# KERNEL: ----------------------------------------------
+# KERNEL: ------------------   -----------------------
+# KERNEL: ----------- SIMULATION RESULT ----------------
+# KERNEL: --------------       -------------------
+# KERNEL: ----------------     ---------------------
+# KERNEL: ----------------------------------------------
+# KERNEL: TIME =                    0, wr = 0, rd = 0, data_in = 00
+# KERNEL: TIME =                   10, data_out =   x, mem =   x
+# KERNEL: TIME =                   30, data_out =   x, mem =   x
+# KERNEL: TIME =                   50, data_out =   x, mem =   x
+# KERNEL: TIME =                   50, wr = 1, rd = 0, data_in = 01
+# KERNEL: TIME =                   70, data_out =   1, mem =   1
+# KERNEL: TIME =                   70, wr = 0, rd = 0, data_in = 01
+# KERNEL: TIME =                   90, data_out =   1, mem =   1
+# KERNEL: TIME =                  110, data_out =   1, mem =   1
+# KERNEL: TIME =                  120, wr = 1, rd = 0, data_in = 02
+# KERNEL: TIME =                  130, data_out =   1, mem =   1
+# KERNEL: TIME =                  140, wr = 0, rd = 0, data_in = 02
+# KERNEL: TIME =                  150, data_out =   1, mem =   1
+# KERNEL: TIME =                  170, data_out =   1, mem =   1
+# KERNEL: TIME =                  190, data_out =   1, mem =   1
+# KERNEL: TIME =                  190, wr = 1, rd = 0, data_in = 03
+# KERNEL: TIME =                  210, data_out =   1, mem =   1
+# KERNEL: TIME =                  210, wr = 0, rd = 0, data_in = 03
+# KERNEL: TIME =                  230, data_out =   1, mem =   1
+# KERNEL: TIME =                  250, data_out =   1, mem =   1
+# KERNEL: TIME =                  260, wr = 1, rd = 0, data_in = 04
+# KERNEL: TIME =                  270, data_out =   1, mem =   1
+# KERNEL: TIME =                  280, wr = 0, rd = 0, data_in = 04
+# KERNEL: TIME =                  290, data_out =   1, mem =   1
+# KERNEL: TIME =                  310, data_out =   1, mem =   1
+# KERNEL: TIME =                  330, data_out =   1, mem =   1
+# KERNEL: TIME =                  330, wr = 1, rd = 0, data_in = 05
+# KERNEL: TIME =                  350, data_out =   1, mem =   1
+# KERNEL: TIME =                  350, wr = 0, rd = 0, data_in = 05
+# KERNEL: TIME =                  370, data_out =   1, mem =   1
+# KERNEL: TIME =                  390, data_out =   1, mem =   1
+# KERNEL: TIME =                  400, wr = 1, rd = 0, data_in = 06
+# KERNEL: TIME =                  410, data_out =   1, mem =   1
+# KERNEL: TIME =                  420, wr = 0, rd = 0, data_in = 06
+# KERNEL: TIME =                  430, data_out =   1, mem =   1
+# KERNEL: TIME =                  450, data_out =   1, mem =   1
+# KERNEL: TIME =                  470, data_out =   1, mem =   1
+# KERNEL: TIME =                  470, wr = 1, rd = 0, data_in = 07
+# KERNEL: TIME =                  490, data_out =   1, mem =   1
+# KERNEL: TIME =                  490, wr = 0, rd = 0, data_in = 07
+# KERNEL: TIME =                  510, data_out =   1, mem =   1
+# KERNEL: TIME =                  530, data_out =   1, mem =   1
+# KERNEL: TIME =                  540, wr = 1, rd = 0, data_in = 08
+# KERNEL: TIME =                  550, data_out =   1, mem =   1
+# KERNEL: TIME =                  560, wr = 0, rd = 0, data_in = 08
+# KERNEL: TIME =                  570, data_out =   1, mem =   1
+# KERNEL: TIME =                  590, data_out =   1, mem =   1
+# KERNEL: TIME =                  610, data_out =   1, mem =   1
+# KERNEL: TIME =                  610, wr = 1, rd = 0, data_in = 09
+# KERNEL: TIME =                  630, data_out =   1, mem =   1
+# KERNEL: TIME =                  630, wr = 0, rd = 0, data_in = 09
+# KERNEL: TIME =                  650, data_out =   1, mem =   1
+# KERNEL: TIME =                  670, data_out =   1, mem =   1
+# KERNEL: TIME =                  680, wr = 1, rd = 0, data_in = 0a
+# KERNEL: TIME =                  690, data_out =   1, mem =   1
+# KERNEL: TIME =                  700, wr = 0, rd = 0, data_in = 0a
+# KERNEL: TIME =                  710, data_out =   1, mem =   1
+# KERNEL: TIME =                  730, data_out =   1, mem =   1
+# KERNEL: TIME =                  750, data_out =   1, mem =   1
+# KERNEL: TIME =                  750, wr = 1, rd = 0, data_in = 0b
+# KERNEL: TIME =                  770, data_out =   1, mem =   1
+# KERNEL: TIME =                  770, wr = 0, rd = 0, data_in = 0b
+# KERNEL: TIME =                  790, data_out =   1, mem =   1
+# KERNEL: TIME =                  810, data_out =   1, mem =   1
+# KERNEL: TIME =                  820, wr = 1, rd = 0, data_in = 0c
+# KERNEL: TIME =                  830, data_out =   1, mem =   1
+# KERNEL: TIME =                  840, wr = 0, rd = 0, data_in = 0c
+# KERNEL: TIME =                  850, data_out =   1, mem =   1
+# KERNEL: TIME =                  870, data_out =   1, mem =   1
+# KERNEL: TIME =                  890, data_out =   1, mem =   1
+# KERNEL: TIME =                  890, wr = 1, rd = 0, data_in = 0d
+# KERNEL: TIME =                  910, data_out =   1, mem =   1
+# KERNEL: TIME =                  910, wr = 0, rd = 0, data_in = 0d
+# KERNEL: TIME =                  930, data_out =   1, mem =   1
+# KERNEL: TIME =                  950, data_out =   1, mem =   1
+# KERNEL: TIME =                  960, wr = 1, rd = 0, data_in = 0e
+# KERNEL: TIME =                  970, data_out =   1, mem =   1
+# KERNEL: TIME =                  980, wr = 0, rd = 0, data_in = 0e
+# KERNEL: TIME =                  990, data_out =   1, mem =   1
+# KERNEL: TIME =                 1010, data_out =   1, mem =   1
+# KERNEL: TIME =                 1030, data_out =   1, mem =   1
+# KERNEL: TIME =                 1030, wr = 1, rd = 0, data_in = 0f
+# KERNEL: TIME =                 1050, data_out =   1, mem =   1
+# KERNEL: TIME =                 1050, wr = 0, rd = 0, data_in = 0f
+# KERNEL: TIME =                 1070, data_out =   1, mem =   1
+# KERNEL: TIME =                 1090, data_out =   1, mem =   1
+# KERNEL: TIME =                 1100, wr = 1, rd = 0, data_in = 10
+# KERNEL: TIME =                 1110, data_out =   1, mem =   1
+# KERNEL: TIME =                 1120, wr = 0, rd = 0, data_in = 10
+# KERNEL: TIME =                 1130, data_out =   1, mem =   1
+# KERNEL: TIME =                 1150, data_out =   1, mem =   1
+# KERNEL: TIME =                 1170, data_out =   1, mem =   1
+# KERNEL: TIME =                 1170, wr = 1, rd = 0, data_in = 11
+# KERNEL: TIME =                 1190, data_out =   1, mem =   1
+# KERNEL: TIME =                 1190, wr = 0, rd = 0, data_in = 11
+# KERNEL: TIME =                 1210, data_out =   1, mem =   1
+# KERNEL: TIME =                 1220, wr = 0, rd = 1, data_in = 11
+# KERNEL: TIME =                 1230, data_out =   1, mem =   1
+# KERNEL: === PASS ===== PASS ==== PASS ==== PASS ===
+# KERNEL: TIME =                 1240, wr = 0, rd = 0, data_in = 11
+# KERNEL: TIME =                 1250, data_out =   2, mem =   2
+# KERNEL: TIME =                 1260, wr = 0, rd = 1, data_in = 11
+# KERNEL: TIME =                 1270, data_out =   2, mem =   2
+# KERNEL: === PASS ===== PASS ==== PASS ==== PASS ===
+# KERNEL: TIME =                 1280, wr = 0, rd = 0, data_in = 11
+# KERNEL: TIME =                 1290, data_out =   3, mem =   3
+# KERNEL: TIME =                 1300, wr = 0, rd = 1, data_in = 11
+# KERNEL: TIME =                 1310, data_out =   3, mem =   3
+# KERNEL: === PASS ===== PASS ==== PASS ==== PASS ===
+# KERNEL: TIME =                 1320, wr = 0, rd = 0, data_in = 11
+# KERNEL: TIME =                 1330, data_out =   4, mem =   4
+# KERNEL: TIME =                 1340, wr = 0, rd = 1, data_in = 11
+# KERNEL: TIME =                 1350, data_out =   4, mem =   4
+# KERNEL: === PASS ===== PASS ==== PASS ==== PASS ===
+# KERNEL: TIME =                 1360, wr = 0, rd = 0, data_in = 11
+# KERNEL: TIME =                 1370, data_out =   5, mem =   5
+# KERNEL: TIME =                 1380, wr = 0, rd = 1, data_in = 11
+# KERNEL: TIME =                 1390, data_out =   5, mem =   5
+# KERNEL: === PASS ===== PASS ==== PASS ==== PASS ===
+# KERNEL: TIME =                 1400, wr = 0, rd = 0, data_in = 11
+# KERNEL: TIME =                 1410, data_out =   6, mem =   6
+# KERNEL: TIME =                 1420, wr = 0, rd = 1, data_in = 11
+# KERNEL: TIME =                 1430, data_out =   6, mem =   6
+# KERNEL: === PASS ===== PASS ==== PASS ==== PASS ===
+# KERNEL: TIME =                 1440, wr = 0, rd = 0, data_in = 11
+# KERNEL: TIME =                 1450, data_out =   7, mem =   7
+# KERNEL: TIME =                 1460, wr = 0, rd = 1, data_in = 11
+# KERNEL: TIME =                 1470, data_out =   7, mem =   7
+# KERNEL: === PASS ===== PASS ==== PASS ==== PASS ===
+# KERNEL: TIME =                 1480, wr = 0, rd = 0, data_in = 11
+# KERNEL: TIME =                 1490, data_out =   8, mem =   8
+# KERNEL: TIME =                 1500, wr = 0, rd = 1, data_in = 11
+# KERNEL: TIME =                 1510, data_out =   8, mem =   8
+# KERNEL: === PASS ===== PASS ==== PASS ==== PASS ===
+# KERNEL: TIME =                 1520, wr = 0, rd = 0, data_in = 11
+# KERNEL: TIME =                 1530, data_out =   9, mem =   9
+# KERNEL: TIME =                 1540, wr = 0, rd = 1, data_in = 11
+# KERNEL: TIME =                 1550, data_out =   9, mem =   9
+# KERNEL: === PASS ===== PASS ==== PASS ==== PASS ===
+# KERNEL: TIME =                 1560, wr = 0, rd = 0, data_in = 11
+# KERNEL: TIME =                 1570, data_out =  10, mem =  10
+# KERNEL: TIME =                 1580, wr = 0, rd = 1, data_in = 11
+# KERNEL: TIME =                 1590, data_out =  10, mem =  10
+# KERNEL: === PASS ===== PASS ==== PASS ==== PASS ===
+# KERNEL: TIME =                 1600, wr = 0, rd = 0, data_in = 11
+# KERNEL: TIME =                 1610, data_out =  11, mem =  11
+# KERNEL: TIME =                 1620, wr = 0, rd = 1, data_in = 11
+# KERNEL: TIME =                 1630, data_out =  11, mem =  11
+# KERNEL: === PASS ===== PASS ==== PASS ==== PASS ===
+# KERNEL: TIME =                 1640, wr = 0, rd = 0, data_in = 11
+# KERNEL: TIME =                 1650, data_out =  12, mem =  12
+# KERNEL: TIME =                 1660, wr = 0, rd = 1, data_in = 11
+# KERNEL: TIME =                 1670, data_out =  12, mem =  12
+# KERNEL: === PASS ===== PASS ==== PASS ==== PASS ===
+# KERNEL: TIME =                 1680, wr = 0, rd = 0, data_in = 11
+# KERNEL: TIME =                 1690, data_out =  13, mem =  13
+# KERNEL: TIME =                 1700, wr = 0, rd = 1, data_in = 11
+# KERNEL: TIME =                 1710, data_out =  13, mem =  13
+# KERNEL: === PASS ===== PASS ==== PASS ==== PASS ===
+# KERNEL: TIME =                 1720, wr = 0, rd = 0, data_in = 11
+# KERNEL: TIME =                 1730, data_out =  14, mem =  14
+# KERNEL: TIME =                 1740, wr = 0, rd = 1, data_in = 11
+# KERNEL: TIME =                 1750, data_out =  14, mem =  14
+# KERNEL: === PASS ===== PASS ==== PASS ==== PASS ===
+# KERNEL: TIME =                 1760, wr = 0, rd = 0, data_in = 11
+# KERNEL: TIME =                 1770, data_out =  15, mem =  15
+# KERNEL: TIME =                 1780, wr = 0, rd = 1, data_in = 11
+# KERNEL: TIME =                 1790, data_out =  15, mem =  15
+# KERNEL: === PASS ===== PASS ==== PASS ==== PASS ===
+# KERNEL: TIME =                 1800, wr = 0, rd = 0, data_in = 11
+# KERNEL: TIME =                 1810, data_out =  16, mem =  16
+# KERNEL: TIME =                 1820, wr = 0, rd = 1, data_in = 11
+# KERNEL: TIME =                 1830, data_out =  16, mem =  16
+# KERNEL: === PASS ===== PASS ==== PASS ==== PASS ===
+# KERNEL: TIME =                 1840, wr = 0, rd = 0, data_in = 11
+# KERNEL: TIME =                 1850, data_out =   1, mem =  17
+# KERNEL: TIME =                 1860, wr = 0, rd = 1, data_in = 11
+# KERNEL: TIME =                 1870, data_out =   1, mem =  17
+# KERNEL: TIME =                 1880, wr = 0, rd = 0, data_in = 11
+# KERNEL: TIME =                 1890, data_out =   1, mem =  17
+# KERNEL: TIME =                 1910, data_out =   1, mem =  17
+# KERNEL: TIME =                 1930, data_out =   1, mem =  17
+# KERNEL: TIME =                 1950, data_out =   1, mem =  17
+# KERNEL: TIME =                 1970, data_out =   1, mem =  17
+# KERNEL: TIME =                 1990, data_out =   1, mem =  17
+# KERNEL: TIME =                 2010, data_out =   1, mem =  17
+# KERNEL: TIME =                 2030, data_out =   1, mem =  17
+# KERNEL: TIME =                 2050, data_out =   1, mem =  17
+# KERNEL: TIME =                 2070, data_out =   1, mem =  17
+# KERNEL: TIME =                 2090, data_out =   1, mem =  17
+# KERNEL: TIME =                 2110, data_out =   1, mem =  17
+# KERNEL: TIME =                 2130, data_out =   1, mem =  17
+# KERNEL: TIME =                 2150, data_out =   1, mem =  17
+# KERNEL: TIME =                 2170, data_out =   1, mem =  17
+# KERNEL: TIME =                 2190, data_out =   1, mem =  17
+# KERNEL: TIME =                 2210, data_out =   1, mem =  17
+# KERNEL: TIME =                 2230, data_out =   1, mem =  17
+# KERNEL: TIME =                 2250, data_out =   1, mem =  17
+# KERNEL: TIME =                 2270, data_out =   1, mem =  17
+# KERNEL: TIME =                 2290, data_out =   1, mem =  17
+# KERNEL: TIME =                 2310, data_out =   1, mem =  17
+# KERNEL: TIME =                 2330, data_out =   1, mem =  17
+# KERNEL: TIME =                 2350, data_out =   1, mem =  17
+# KERNEL: TIME =                 2370, data_out =   1, mem =  17
+# KERNEL: TIME =                 2390, data_out =   1, mem =  17
+# KERNEL: TIME =                 2410, data_out =   1, mem =  17
+# KERNEL: TIME =                 2430, data_out =   1, mem =  17
+# KERNEL: TIME =                 2450, data_out =   1, mem =  17
+# KERNEL: TIME =                 2470, data_out =   1, mem =  17
+# KERNEL: TIME =                 2490, data_out =   1, mem =  17
+# KERNEL: TIME =                 2510, data_out =   1, mem =  17
+# KERNEL: TIME =                 2530, data_out =   1, mem =  17
+# KERNEL: TIME =                 2550, data_out =   1, mem =  17
+# KERNEL: TIME =                 2570, data_out =   1, mem =  17
+# KERNEL: TIME =                 2590, data_out =   1, mem =  17
+# KERNEL: TIME =                 2610, data_out =   1, mem =  17
+# KERNEL: TIME =                 2630, data_out =   1, mem =  17
+# KERNEL: TIME =                 2650, data_out =   1, mem =  17
+# KERNEL: TIME =                 2670, data_out =   1, mem =  17
+# KERNEL: TIME =                 2690, data_out =   1, mem =  17
+# KERNEL: TIME =                 2710, data_out =   1, mem =  17
+# KERNEL: TIME =                 2730, data_out =   1, mem =  17
+# KERNEL: TIME =                 2750, data_out =   1, mem =  17
+# KERNEL: TIME =                 2770, data_out =   1, mem =  17
+# KERNEL: TIME =                 2790, data_out =   1, mem =  17
+# KERNEL: TIME =                 2810, data_out =   1, mem =  17
+# KERNEL: TIME =                 2830, data_out =   1, mem =  17
+# KERNEL: TIME =                 2850, data_out =   1, mem =  17
+# KERNEL: TIME =                 2870, data_out =   1, mem =  17
+# KERNEL: TIME =                 2890, data_out =   1, mem =  17
+# KERNEL: TIME =                 2910, data_out =   1, mem =  17
+# KERNEL: TIME =                 2930, data_out =   1, mem =  17
+# KERNEL: TIME =                 2950, data_out =   1, mem =  17
+# KERNEL: TIME =                 2970, data_out =   1, mem =  17
+# KERNEL: TIME =                 2990, data_out =   1, mem =  17
+# KERNEL: TIME =                 3010, data_out =   1, mem =  17
+# KERNEL: TIME =                 3030, data_out =   1, mem =  17
+# KERNEL: TIME =                 3050, data_out =   1, mem =  17
+# KERNEL: TIME =                 3070, data_out =   1, mem =  17
+# KERNEL: TIME =                 3090, data_out =   1, mem =  17
+# KERNEL: TIME =                 3110, data_out =   1, mem =  17
+# KERNEL: TIME =                 3130, data_out =   1, mem =  17
+# KERNEL: TIME =                 3150, data_out =   1, mem =  17
+# KERNEL: TIME =                 3170, data_out =   1, mem =  17
+# KERNEL: TIME =                 3190, data_out =   1, mem =  17
+# KERNEL: TIME =                 3210, data_out =   1, mem =  17
+# KERNEL: TIME =                 3230, data_out =   1, mem =  17
+# KERNEL: TIME =                 3250, data_out =   1, mem =  17
+# KERNEL: TIME =                 3270, data_out =   1, mem =  17
+# KERNEL: TIME =                 3290, data_out =   1, mem =  17
+# KERNEL: TIME =                 3310, data_out =   1, mem =  17
+# KERNEL: TIME =                 3330, data_out =   1, mem =  17
+# KERNEL: TIME =                 3350, data_out =   1, mem =  17
+# KERNEL: TIME =                 3370, data_out =   1, mem =  17
+# KERNEL: TIME =                 3390, data_out =   1, mem =  17
+# KERNEL: TIME =                 3410, data_out =   1, mem =  17
+# KERNEL: TIME =                 3430, data_out =   1, mem =  17
+# KERNEL: TIME =                 3450, data_out =   1, mem =  17
+# KERNEL: TIME =                 3470, data_out =   1, mem =  17
+# KERNEL: TIME =                 3490, data_out =   1, mem =  17
+# KERNEL: TIME =                 3510, data_out =   1, mem =  17
+# KERNEL: TIME =                 3530, data_out =   1, mem =  17
+# KERNEL: TIME =                 3550, data_out =   1, mem =  17
+# KERNEL: TIME =                 3570, data_out =   1, mem =  17
+# KERNEL: TIME =                 3590, data_out =   1, mem =  17
+# KERNEL: TIME =                 3610, data_out =   1, mem =  17
+# KERNEL: TIME =                 3630, data_out =   1, mem =  17
+# KERNEL: TIME =                 3650, data_out =   1, mem =  17
+# KERNEL: TIME =                 3670, data_out =   1, mem =  17
+# KERNEL: TIME =                 3690, data_out =   1, mem =  17
+# KERNEL: TIME =                 3710, data_out =   1, mem =  17
+# KERNEL: TIME =                 3730, data_out =   1, mem =  17
+# KERNEL: TIME =                 3750, data_out =   1, mem =  17
+# KERNEL: TIME =                 3770, data_out =   1, mem =  17
+# KERNEL: TIME =                 3790, data_out =   1, mem =  17
+# KERNEL: TIME =                 3810, data_out =   1, mem =  17
+# KERNEL: TIME =                 3830, data_out =   1, mem =  17
+# KERNEL: TIME =                 3850, data_out =   1, mem =  17
+# KERNEL: TIME =                 3870, data_out =   1, mem =  17
+# KERNEL: TIME =                 3890, data_out =   1, mem =  17
+# KERNEL: TIME =                 3910, data_out =   1, mem =  17
+# KERNEL: TIME =                 3930, data_out =   1, mem =  17
+# KERNEL: TIME =                 3950, data_out =   1, mem =  17
+# KERNEL: TIME =                 3970, data_out =   1, mem =  17
+# KERNEL: TIME =                 3990, data_out =   1, mem =  17
+# KERNEL: TIME =                 4010, data_out =   1, mem =  17
+# KERNEL: TIME =                 4030, data_out =   1, mem =  17
+# KERNEL: TIME =                 4050, data_out =   1, mem =  17
+# KERNEL: TIME =                 4070, data_out =   1, mem =  17
+# KERNEL: TIME =                 4090, data_out =   1, mem =  17
+# KERNEL: TIME =                 4110, data_out =   1, mem =  17
+# KERNEL: TIME =                 4130, data_out =   1, mem =  17
+# KERNEL: TIME =                 4150, data_out =   1, mem =  17
+# KERNEL: TIME =                 4170, data_out =   1, mem =  17
+# KERNEL: TIME =                 4190, data_out =   1, mem =  17
+# KERNEL: TIME =                 4210, data_out =   1, mem =  17
+# KERNEL: TIME =                 4230, data_out =   1, mem =  17
+# KERNEL: TIME =                 4250, data_out =   1, mem =  17
+# KERNEL: TIME =                 4270, data_out =   1, mem =  17
+# KERNEL: TIME =                 4290, data_out =   1, mem =  17
+# KERNEL: TIME =                 4310, data_out =   1, mem =  17
+# KERNEL: TIME =                 4330, data_out =   1, mem =  17
+# KERNEL: TIME =                 4350, data_out =   1, mem =  17
+# KERNEL: TIME =                 4370, data_out =   1, mem =  17
+# KERNEL: TIME =                 4390, data_out =   1, mem =  17
+# KERNEL: TIME =                 4410, data_out =   1, mem =  17
+# KERNEL: TIME =                 4430, data_out =   1, mem =  17
+# KERNEL: TIME =                 4450, data_out =   1, mem =  17
+# KERNEL: TIME =                 4470, data_out =   1, mem =  17
+# KERNEL: TIME =                 4490, data_out =   1, mem =  17
+# KERNEL: TIME =                 4510, data_out =   1, mem =  17
+# KERNEL: TIME =                 4530, data_out =   1, mem =  17
+# KERNEL: TIME =                 4550, data_out =   1, mem =  17
+# KERNEL: TIME =                 4570, data_out =   1, mem =  17
+# KERNEL: TIME =                 4590, data_out =   1, mem =  17
+# KERNEL: TIME =                 4610, data_out =   1, mem =  17
+# KERNEL: TIME =                 4630, data_out =   1, mem =  17
+# KERNEL: TIME =                 4650, data_out =   1, mem =  17
+# KERNEL: TIME =                 4670, data_out =   1, mem =  17
+# KERNEL: TIME =                 4690, data_out =   1, mem =  17
+# KERNEL: TIME =                 4710, data_out =   1, mem =  17
+# KERNEL: TIME =                 4730, data_out =   1, mem =  17
+# KERNEL: TIME =                 4750, data_out =   1, mem =  17
+# KERNEL: TIME =                 4770, data_out =   1, mem =  17
+# KERNEL: TIME =                 4790, data_out =   1, mem =  17
+# KERNEL: TIME =                 4810, data_out =   1, mem =  17
+# KERNEL: TIME =                 4830, data_out =   1, mem =  17
+# KERNEL: TIME =                 4850, data_out =   1, mem =  17
+# KERNEL: TIME =                 4870, data_out =   1, mem =  17
+# KERNEL: TIME =                 4890, data_out =   1, mem =  17
+# KERNEL: TIME =                 4910, data_out =   1, mem =  17
+# KERNEL: TIME =                 4930, data_out =   1, mem =  17
+# KERNEL: TIME =                 4950, data_out =   1, mem =  17
+# KERNEL: TIME =                 4970, data_out =   1, mem =  17
+# KERNEL: TIME =                 4990, data_out =   1, mem =  17
+# KERNEL: TIME =                 5010, data_out =   1, mem =  17
+# KERNEL: TIME =                 5030, data_out =   1, mem =  17
+# KERNEL: TIME =                 5050, data_out =   1, mem =  17
+# KERNEL: TIME =                 5070, data_out =   1, mem =  17
+# KERNEL: TIME =                 5090, data_out =   1, mem =  17
+# KERNEL: TIME =                 5110, data_out =   1, mem =  17
+# KERNEL: TIME =                 5130, data_out =   1, mem =  17
+# KERNEL: TIME =                 5150, data_out =   1, mem =  17
+# KERNEL: TIME =                 5170, data_out =   1, mem =  17
+# KERNEL: TIME =                 5190, data_out =   1, mem =  17
+# KERNEL: TIME =                 5210, data_out =   1, mem =  17
+# KERNEL: TIME =                 5230, data_out =   1, mem =  17
+# KERNEL: TIME =                 5250, data_out =   1, mem =  17
+# KERNEL: TIME =                 5270, data_out =   1, mem =  17
+# KERNEL: TIME =                 5290, data_out =   1, mem =  17
+# KERNEL: TIME =                 5310, data_out =   1, mem =  17
+# KERNEL: TIME =                 5330, data_out =   1, mem =  17
+# KERNEL: TIME =                 5350, data_out =   1, mem =  17
+# KERNEL: TIME =                 5370, data_out =   1, mem =  17
+# KERNEL: TIME =                 5390, data_out =   1, mem =  17
+# KERNEL: TIME =                 5410, data_out =   1, mem =  17
+# KERNEL: TIME =                 5430, data_out =   1, mem =  17
+# KERNEL: TIME =                 5450, data_out =   1, mem =  17
+# KERNEL: TIME =                 5470, data_out =   1, mem =  17
+# KERNEL: TIME =                 5490, data_out =   1, mem =  17
+# KERNEL: TIME =                 5510, data_out =   1, mem =  17
+# KERNEL: TIME =                 5530, data_out =   1, mem =  17
+# KERNEL: TIME =                 5550, data_out =   1, mem =  17
+# KERNEL: TIME =                 5570, data_out =   1, mem =  17
+# KERNEL: TIME =                 5590, data_out =   1, mem =  17
+# KERNEL: TIME =                 5610, data_out =   1, mem =  17
+# KERNEL: TIME =                 5630, data_out =   1, mem =  17
+# KERNEL: TIME =                 5650, data_out =   1, mem =  17
+# KERNEL: TIME =                 5670, data_out =   1, mem =  17
+# KERNEL: TIME =                 5690, data_out =   1, mem =  17
+# KERNEL: TIME =                 5710, data_out =   1, mem =  17
+# KERNEL: TIME =                 5730, data_out =   1, mem =  17
+# KERNEL: TIME =                 5750, data_out =   1, mem =  17
+# KERNEL: TIME =                 5770, data_out =   1, mem =  17
+# KERNEL: TIME =                 5790, data_out =   1, mem =  17
+# KERNEL: TIME =                 5810, data_out =   1, mem =  17
+# KERNEL: TIME =                 5830, data_out =   1, mem =  17
+# KERNEL: TIME =                 5850, data_out =   1, mem =  17
+# KERNEL: TIME =                 5870, data_out =   1, mem =  17
+# KERNEL: TIME =                 5890, data_out =   1, mem =  17
+# KERNEL: TIME =                 5910, data_out =   1, mem =  17
+# KERNEL: TIME =                 5930, data_out =   1, mem =  17
+# KERNEL: TIME =                 5950, data_out =   1, mem =  17
+# KERNEL: TIME =                 5970, data_out =   1, mem =  17
+# KERNEL: TIME =                 5990, data_out =   1, mem =  17
+# KERNEL: TIME =                 6010, data_out =   1, mem =  17
+# KERNEL: TIME =                 6030, data_out =   1, mem =  17
+# KERNEL: TIME =                 6050, data_out =   1, mem =  17
+# KERNEL: TIME =                 6070, data_out =   1, mem =  17
+# KERNEL: TIME =                 6090, data_out =   1, mem =  17
+# KERNEL: TIME =                 6110, data_out =   1, mem =  17
+# KERNEL: TIME =                 6130, data_out =   1, mem =  17
+# KERNEL: TIME =                 6150, data_out =   1, mem =  17
+# KERNEL: TIME =                 6170, data_out =   1, mem =  17
+# KERNEL: TIME =                 6190, data_out =   1, mem =  17
+# KERNEL: TIME =                 6210, data_out =   1, mem =  17
+# KERNEL: TIME =                 6230, data_out =   1, mem =  17
+# KERNEL: TIME =                 6250, data_out =   1, mem =  17
+# KERNEL: TIME =                 6270, data_out =   1, mem =  17
+# KERNEL: TIME =                 6290, data_out =   1, mem =  17
+# KERNEL: TIME =                 6310, data_out =   1, mem =  17
+# KERNEL: TIME =                 6330, data_out =   1, mem =  17
+# KERNEL: TIME =                 6350, data_out =   1, mem =  17
+# KERNEL: TIME =                 6370, data_out =   1, mem =  17
+# KERNEL: TIME =                 6390, data_out =   1, mem =  17
+# KERNEL: TIME =                 6410, data_out =   1, mem =  17
+# KERNEL: TIME =                 6430, data_out =   1, mem =  17
+# KERNEL: TIME =                 6450, data_out =   1, mem =  17
+# KERNEL: TIME =                 6470, data_out =   1, mem =  17
+# KERNEL: TIME =                 6490, data_out =   1, mem =  17
+# KERNEL: TIME =                 6510, data_out =   1, mem =  17
+# KERNEL: TIME =                 6530, data_out =   1, mem =  17
+# KERNEL: TIME =                 6550, data_out =   1, mem =  17
+# KERNEL: TIME =                 6570, data_out =   1, mem =  17
+# KERNEL: TIME =                 6590, data_out =   1, mem =  17
+# KERNEL: TIME =                 6610, data_out =   1, mem =  17
+# KERNEL: TIME =                 6630, data_out =   1, mem =  17
+# KERNEL: TIME =                 6650, data_out =   1, mem =  17
+# KERNEL: TIME =                 6670, data_out =   1, mem =  17
+# KERNEL: TIME =                 6690, data_out =   1, mem =  17
+# KERNEL: TIME =                 6710, data_out =   1, mem =  17
+# KERNEL: TIME =                 6730, data_out =   1, mem =  17
+# KERNEL: TIME =                 6750, data_out =   1, mem =  17
+# KERNEL: TIME =                 6770, data_out =   1, mem =  17
+# KERNEL: TIME =                 6790, data_out =   1, mem =  17
+# KERNEL: TIME =                 6810, data_out =   1, mem =  17
+# KERNEL: TIME =                 6830, data_out =   1, mem =  17
+# KERNEL: TIME =                 6850, data_out =   1, mem =  17
+# KERNEL: TIME =                 6870, data_out =   1, mem =  17
+# KERNEL: TIME =                 6890, data_out =   1, mem =  17
+# KERNEL: TIME =                 6910, data_out =   1, mem =  17
+# KERNEL: TIME =                 6930, data_out =   1, mem =  17
+# KERNEL: TIME =                 6950, data_out =   1, mem =  17
+# KERNEL: TIME =                 6970, data_out =   1, mem =  17
+# KERNEL: TIME =                 6990, data_out =   1, mem =  17
+# KERNEL: TIME =                 7010, data_out =   1, mem =  17
+# KERNEL: TIME =                 7030, data_out =   1, mem =  17
+# KERNEL: TIME =                 7050, data_out =   1, mem =  17
+# KERNEL: TIME =                 7070, data_out =   1, mem =  17
+# KERNEL: TIME =                 7090, data_out =   1, mem =  17
+# KERNEL: TIME =                 7110, data_out =   1, mem =  17
+# KERNEL: TIME =                 7130, data_out =   1, mem =  17
+# KERNEL: TIME =                 7150, data_out =   1, mem =  17
+# KERNEL: TIME =                 7170, data_out =   1, mem =  17
+# KERNEL: TIME =                 7190, data_out =   1, mem =  17
+# KERNEL: TIME =                 7210, data_out =   1, mem =  17
+# KERNEL: TIME =                 7230, data_out =   1, mem =  17
+# KERNEL: TIME =                 7250, data_out =   1, mem =  17
+# KERNEL: TIME =                 7270, data_out =   1, mem =  17
+# KERNEL: TIME =                 7290, data_out =   1, mem =  17
+# KERNEL: TIME =                 7310, data_out =   1, mem =  17
+# KERNEL: TIME =                 7330, data_out =   1, mem =  17
+# KERNEL: TIME =                 7350, data_out =   1, mem =  17
+# KERNEL: TIME =                 7370, data_out =   1, mem =  17
+# KERNEL: TIME =                 7390, data_out =   1, mem =  17
+# KERNEL: TIME =                 7410, data_out =   1, mem =  17
+# KERNEL: TIME =                 7430, data_out =   1, mem =  17
+# KERNEL: TIME =                 7450, data_out =   1, mem =  17
+# KERNEL: TIME =                 7470, data_out =   1, mem =  17
+# KERNEL: TIME =                 7490, data_out =   1, mem =  17
+# KERNEL: TIME =                 7510, data_out =   1, mem =  17
+# KERNEL: TIME =                 7530, data_out =   1, mem =  17
+# KERNEL: TIME =                 7550, data_out =   1, mem =  17
+# KERNEL: TIME =                 7570, data_out =   1, mem =  17
+# KERNEL: TIME =                 7590, data_out =   1, mem =  17
+# KERNEL: TIME =                 7610, data_out =   1, mem =  17
+# KERNEL: TIME =                 7630, data_out =   1, mem =  17
+# KERNEL: TIME =                 7650, data_out =   1, mem =  17
+# KERNEL: TIME =                 7670, data_out =   1, mem =  17
+# KERNEL: TIME =                 7690, data_out =   1, mem =  17
+# KERNEL: TIME =                 7710, data_out =   1, mem =  17
+# KERNEL: TIME =                 7730, data_out =   1, mem =  17
+# KERNEL: TIME =                 7750, data_out =   1, mem =  17
+# KERNEL: TIME =                 7770, data_out =   1, mem =  17
+# KERNEL: TIME =                 7790, data_out =   1, mem =  17
+# KERNEL: TIME =                 7810, data_out =   1, mem =  17
+# KERNEL: TIME =                 7830, data_out =   1, mem =  17
+# KERNEL: TIME =                 7850, data_out =   1, mem =  17
+# KERNEL: TIME =                 7870, data_out =   1, mem =  17
+# KERNEL: TIME =                 7890, data_out =   1, mem =  17
+# KERNEL: TIME =                 7910, data_out =   1, mem =  17
+# KERNEL: TIME =                 7930, data_out =   1, mem =  17
+# KERNEL: TIME =                 7950, data_out =   1, mem =  17
+# KERNEL: TIME =                 7970, data_out =   1, mem =  17
+# KERNEL: TIME =                 7990, data_out =   1, mem =  17
+# KERNEL: TIME =                 8010, data_out =   1, mem =  17
+# KERNEL: TIME =                 8030, data_out =   1, mem =  17
+# KERNEL: TIME =                 8050, data_out =   1, mem =  17
+# KERNEL: TIME =                 8070, data_out =   1, mem =  17
+# KERNEL: TIME =                 8090, data_out =   1, mem =  17
+# KERNEL: TIME =                 8110, data_out =   1, mem =  17
+# KERNEL: TIME =                 8130, data_out =   1, mem =  17
+# KERNEL: TIME =                 8150, data_out =   1, mem =  17
+# KERNEL: TIME =                 8170, data_out =   1, mem =  17
+# KERNEL: TIME =                 8190, data_out =   1, mem =  17
+# KERNEL: TIME =                 8210, data_out =   1, mem =  17
+# KERNEL: TIME =                 8230, data_out =   1, mem =  17
+# KERNEL: TIME =                 8250, data_out =   1, mem =  17
+# KERNEL: TIME =                 8270, data_out =   1, mem =  17
+# KERNEL: TIME =                 8290, data_out =   1, mem =  17
+# KERNEL: TIME =                 8310, data_out =   1, mem =  17
+# KERNEL: TIME =                 8330, data_out =   1, mem =  17
+# KERNEL: TIME =                 8350, data_out =   1, mem =  17
+# KERNEL: TIME =                 8370, data_out =   1, mem =  17
+# KERNEL: TIME =                 8390, data_out =   1, mem =  17
+# KERNEL: TIME =                 8410, data_out =   1, mem =  17
+# KERNEL: TIME =                 8430, data_out =   1, mem =  17
+# KERNEL: TIME =                 8450, data_out =   1, mem =  17
+# KERNEL: TIME =                 8470, data_out =   1, mem =  17
+# KERNEL: TIME =                 8490, data_out =   1, mem =  17
+# KERNEL: TIME =                 8510, data_out =   1, mem =  17
+# KERNEL: TIME =                 8530, data_out =   1, mem =  17
+# KERNEL: TIME =                 8550, data_out =   1, mem =  17
+# KERNEL: TIME =                 8570, data_out =   1, mem =  17
+# KERNEL: TIME =                 8590, data_out =   1, mem =  17
+# KERNEL: TIME =                 8610, data_out =   1, mem =  17
+# KERNEL: TIME =                 8630, data_out =   1, mem =  17
+# KERNEL: TIME =                 8650, data_out =   1, mem =  17
+# KERNEL: TIME =                 8670, data_out =   1, mem =  17
+# KERNEL: TIME =                 8690, data_out =   1, mem =  17
+# KERNEL: TIME =                 8710, data_out =   1, mem =  17
+# KERNEL: TIME =                 8730, data_out =   1, mem =  17
+# KERNEL: TIME =                 8750, data_out =   1, mem =  17
+# KERNEL: TIME =                 8770, data_out =   1, mem =  17
+# KERNEL: TIME =                 8790, data_out =   1, mem =  17
+# KERNEL: TIME =                 8810, data_out =   1, mem =  17
+# KERNEL: TIME =                 8830, data_out =   1, mem =  17
+# KERNEL: TIME =                 8850, data_out =   1, mem =  17
+# KERNEL: TIME =                 8870, data_out =   1, mem =  17
+# KERNEL: TIME =                 8890, data_out =   1, mem =  17
+# KERNEL: TIME =                 8910, data_out =   1, mem =  17
+# KERNEL: TIME =                 8930, data_out =   1, mem =  17
+# KERNEL: TIME =                 8950, data_out =   1, mem =  17
+# KERNEL: TIME =                 8970, data_out =   1, mem =  17
+# KERNEL: TIME =                 8990, data_out =   1, mem =  17
+# KERNEL: TIME =                 9010, data_out =   1, mem =  17
+# KERNEL: TIME =                 9030, data_out =   1, mem =  17
+# KERNEL: TIME =                 9050, data_out =   1, mem =  17
+# KERNEL: TIME =                 9070, data_out =   1, mem =  17
+# KERNEL: TIME =                 9090, data_out =   1, mem =  17
+# KERNEL: TIME =                 9110, data_out =   1, mem =  17
+# KERNEL: TIME =                 9130, data_out =   1, mem =  17
+# KERNEL: TIME =                 9150, data_out =   1, mem =  17
+# KERNEL: TIME =                 9170, data_out =   1, mem =  17
+# KERNEL: TIME =                 9190, data_out =   1, mem =  17
+# KERNEL: TIME =                 9210, data_out =   1, mem =  17
+# KERNEL: TIME =                 9230, data_out =   1, mem =  17
+# KERNEL: TIME =                 9250, data_out =   1, mem =  17
+# KERNEL: TIME =                 9270, data_out =   1, mem =  17
+# KERNEL: TIME =                 9290, data_out =   1, mem =  17
+# KERNEL: TIME =                 9310, data_out =   1, mem =  17
+# KERNEL: TIME =                 9330, data_out =   1, mem =  17
+# KERNEL: TIME =                 9350, data_out =   1, mem =  17
+# KERNEL: TIME =                 9370, data_out =   1, mem =  17
+# KERNEL: TIME =                 9390, data_out =   1, mem =  17
+# KERNEL: TIME =                 9410, data_out =   1, mem =  17
+# KERNEL: TIME =                 9430, data_out =   1, mem =  17
+# KERNEL: TIME =                 9450, data_out =   1, mem =  17
+# KERNEL: TIME =                 9470, data_out =   1, mem =  17
+# KERNEL: TIME =                 9490, data_out =   1, mem =  17
+# KERNEL: TIME =                 9510, data_out =   1, mem =  17
+# KERNEL: TIME =                 9530, data_out =   1, mem =  17
+# KERNEL: TIME =                 9550, data_out =   1, mem =  17
+# KERNEL: TIME =                 9570, data_out =   1, mem =  17
+# KERNEL: TIME =                 9590, data_out =   1, mem =  17
+# KERNEL: TIME =                 9610, data_out =   1, mem =  17
+# KERNEL: TIME =                 9630, data_out =   1, mem =  17
+# KERNEL: TIME =                 9650, data_out =   1, mem =  17
+# KERNEL: TIME =                 9670, data_out =   1, mem =  17
+# KERNEL: TIME =                 9690, data_out =   1, mem =  17
+# KERNEL: TIME =                 9710, data_out =   1, mem =  17
+# KERNEL: TIME =                 9730, data_out =   1, mem =  17
+# KERNEL: TIME =                 9750, data_out =   1, mem =  17
+# KERNEL: TIME =                 9770, data_out =   1, mem =  17
+# KERNEL: TIME =                 9790, data_out =   1, mem =  17
+# KERNEL: TIME =                 9810, data_out =   1, mem =  17
+# KERNEL: TIME =                 9830, data_out =   1, mem =  17
+# KERNEL: TIME =                 9850, data_out =   1, mem =  17
+# KERNEL: TIME =                 9870, data_out =   1, mem =  17
+# KERNEL: TIME =                 9890, data_out =   1, mem =  17
+# KERNEL: TIME =                 9910, data_out =   1, mem =  17
+# KERNEL: TIME =                 9930, data_out =   1, mem =  17
+# KERNEL: TIME =                 9950, data_out =   1, mem =  17
+# KERNEL: TIME =                 9970, data_out =   1, mem =  17
+# KERNEL: TIME =                 9990, data_out =   1, mem =  17
+# KERNEL: TIME =                10010, data_out =   1, mem =  17
+# KERNEL: TIME =                10030, data_out =   1, mem =  17
+# KERNEL: TIME =                10050, data_out =   1, mem =  17
+# KERNEL: TIME =                10070, data_out =   1, mem =  17
+# KERNEL: TIME =                10090, data_out =   1, mem =  17
+# KERNEL: TIME =                10110, data_out =   1, mem =  17
+# KERNEL: TIME =                10130, data_out =   1, mem =  17
+# KERNEL: TIME =                10150, data_out =   1, mem =  17
+# KERNEL: TIME =                10170, data_out =   1, mem =  17
+# KERNEL: TIME =                10190, data_out =   1, mem =  17
+# KERNEL: TIME =                10210, data_out =   1, mem =  17
+# KERNEL: TIME =                10230, data_out =   1, mem =  17
+# KERNEL: TIME =                10250, data_out =   1, mem =  17
+# KERNEL: TIME =                10270, data_out =   1, mem =  17
+# KERNEL: TIME =                10290, data_out =   1, mem =  17
+# KERNEL: TIME =                10310, data_out =   1, mem =  17
+# KERNEL: TIME =                10330, data_out =   1, mem =  17
+# KERNEL: TIME =                10350, data_out =   1, mem =  17
+# KERNEL: TIME =                10370, data_out =   1, mem =  17
+# KERNEL: TIME =                10390, data_out =   1, mem =  17
+# KERNEL: TIME =                10410, data_out =   1, mem =  17
+# KERNEL: TIME =                10430, data_out =   1, mem =  17
+# KERNEL: TIME =                10450, data_out =   1, mem =  17
+# KERNEL: TIME =                10470, data_out =   1, mem =  17
+# KERNEL: TIME =                10490, data_out =   1, mem =  17
+# KERNEL: TIME =                10510, data_out =   1, mem =  17
+# KERNEL: TIME =                10530, data_out =   1, mem =  17
+# KERNEL: TIME =                10550, data_out =   1, mem =  17
+# KERNEL: TIME =                10570, data_out =   1, mem =  17
+# KERNEL: TIME =                10590, data_out =   1, mem =  17
+# KERNEL: TIME =                10610, data_out =   1, mem =  17
+# KERNEL: TIME =                10630, data_out =   1, mem =  17
+# KERNEL: TIME =                10650, data_out =   1, mem =  17
+# KERNEL: TIME =                10670, data_out =   1, mem =  17
+# KERNEL: TIME =                10690, data_out =   1, mem =  17
+# KERNEL: TIME =                10710, data_out =   1, mem =  17
+# KERNEL: TIME =                10730, data_out =   1, mem =  17
+# KERNEL: TIME =                10750, data_out =   1, mem =  17
+# KERNEL: TIME =                10770, data_out =   1, mem =  17
+# KERNEL: TIME =                10790, data_out =   1, mem =  17
+# KERNEL: TIME =                10810, data_out =   1, mem =  17
+# KERNEL: TIME =                10830, data_out =   1, mem =  17
+# KERNEL: TIME =                10850, data_out =   1, mem =  17
+# KERNEL: TIME =                10870, data_out =   1, mem =  17
+# KERNEL: TIME =                10890, data_out =   1, mem =  17
+# KERNEL: TIME =                10910, data_out =   1, mem =  17
+# KERNEL: TIME =                10930, data_out =   1, mem =  17
+# KERNEL: TIME =                10950, data_out =   1, mem =  17
+# KERNEL: TIME =                10970, data_out =   1, mem =  17
+# KERNEL: TIME =                10990, data_out =   1, mem =  17
+# KERNEL: TIME =                11010, data_out =   1, mem =  17
+# KERNEL: TIME =                11030, data_out =   1, mem =  17
+# KERNEL: TIME =                11050, data_out =   1, mem =  17
+# KERNEL: TIME =                11070, data_out =   1, mem =  17
+# KERNEL: TIME =                11090, data_out =   1, mem =  17
+# KERNEL: TIME =                11110, data_out =   1, mem =  17
+# KERNEL: TIME =                11130, data_out =   1, mem =  17
+# KERNEL: TIME =                11150, data_out =   1, mem =  17
+# KERNEL: TIME =                11170, data_out =   1, mem =  17
+# KERNEL: TIME =                11190, data_out =   1, mem =  17
+# KERNEL: TIME =                11210, data_out =   1, mem =  17
+# KERNEL: TIME =                11230, data_out =   1, mem =  17
+# KERNEL: TIME =                11250, data_out =   1, mem =  17
+# KERNEL: TIME =                11270, data_out =   1, mem =  17
+# KERNEL: TIME =                11290, data_out =   1, mem =  17
+# KERNEL: TIME =                11310, data_out =   1, mem =  17
+# KERNEL: TIME =                11330, data_out =   1, mem =  17
+# KERNEL: TIME =                11350, data_out =   1, mem =  17
+# KERNEL: TIME =                11370, data_out =   1, mem =  17
+# KERNEL: TIME =                11390, data_out =   1, mem =  17
+# KERNEL: TIME =                11410, data_out =   1, mem =  17
+# KERNEL: TIME =                11430, data_out =   1, mem =  17
+# KERNEL: TIME =                11450, data_out =   1, mem =  17
+# KERNEL: TIME =                11470, data_out =   1, mem =  17
+# KERNEL: TIME =                11490, data_out =   1, mem =  17
+# KERNEL: TIME =                11510, data_out =   1, mem =  17
+# KERNEL: TIME =                11530, data_out =   1, mem =  17
+# KERNEL: TIME =                11550, data_out =   1, mem =  17
+# KERNEL: TIME =                11570, data_out =   1, mem =  17
+# KERNEL: TIME =                11590, data_out =   1, mem =  17
+# KERNEL: TIME =                11610, data_out =   1, mem =  17
+# KERNEL: TIME =                11630, data_out =   1, mem =  17
+# KERNEL: TIME =                11650, data_out =   1, mem =  17
+# KERNEL: TIME =                11670, data_out =   1, mem =  17
+# KERNEL: TIME =                11690, data_out =   1, mem =  17
+# KERNEL: TIME =                11710, data_out =   1, mem =  17
+# KERNEL: TIME =                11730, data_out =   1, mem =  17
+# KERNEL: TIME =                11750, data_out =   1, mem =  17
+# KERNEL: TIME =                11770, data_out =   1, mem =  17
+# KERNEL: TIME =                11790, data_out =   1, mem =  17
+# KERNEL: TIME =                11810, data_out =   1, mem =  17
+# KERNEL: TIME =                11830, data_out =   1, mem =  17
+# KERNEL: TIME =                11850, data_out =   1, mem =  17
+# KERNEL: TIME =                11870, data_out =   1, mem =  17
+# KERNEL: TIME =                11890, data_out =   1, mem =  17
+# KERNEL: TIME =                11910, data_out =   1, mem =  17
+# KERNEL: TIME =                11930, data_out =   1, mem =  17
+# KERNEL: TIME =                11950, data_out =   1, mem =  17
+# KERNEL: TIME =                11970, data_out =   1, mem =  17
+# KERNEL: TIME =                11990, data_out =   1, mem =  17
+# KERNEL: TIME =                12010, data_out =   1, mem =  17
+# KERNEL: TIME =                12030, data_out =   1, mem =  17
+# KERNEL: TIME =                12050, data_out =   1, mem =  17
+# KERNEL: TIME =                12070, data_out =   1, mem =  17
+# KERNEL: TIME =                12090, data_out =   1, mem =  17
+# KERNEL: TIME =                12110, data_out =   1, mem =  17
+# KERNEL: TIME =                12130, data_out =   1, mem =  17
+# KERNEL: TIME =                12150, data_out =   1, mem =  17
+# KERNEL: TIME =                12170, data_out =   1, mem =  17
+# KERNEL: TIME =                12190, data_out =   1, mem =  17
+# KERNEL: TIME =                12210, data_out =   1, mem =  17
+# KERNEL: TIME =                12230, data_out =   1, mem =  17
+# KERNEL: TIME =                12250, data_out =   1, mem =  17
+# KERNEL: TIME =                12270, data_out =   1, mem =  17
+# KERNEL: TIME =                12290, data_out =   1, mem =  17
+# KERNEL: TIME =                12310, data_out =   1, mem =  17
+# KERNEL: TIME =                12330, data_out =   1, mem =  17
+# KERNEL: TIME =                12350, data_out =   1, mem =  17
+# KERNEL: TIME =                12370, data_out =   1, mem =  17
+# KERNEL: TIME =                12390, data_out =   1, mem =  17
+# KERNEL: TIME =                12410, data_out =   1, mem =  17
+# KERNEL: TIME =                12430, data_out =   1, mem =  17
+# KERNEL: TIME =                12450, data_out =   1, mem =  17
+# KERNEL: TIME =                12470, data_out =   1, mem =  17
+# KERNEL: TIME =                12490, data_out =   1, mem =  17
+# KERNEL: TIME =                12510, data_out =   1, mem =  17
+# KERNEL: TIME =                12530, data_out =   1, mem =  17
+# KERNEL: TIME =                12550, data_out =   1, mem =  17
+# KERNEL: TIME =                12570, data_out =   1, mem =  17
+# KERNEL: TIME =                12590, data_out =   1, mem =  17
+# KERNEL: TIME =                12610, data_out =   1, mem =  17
+# KERNEL: TIME =                12630, data_out =   1, mem =  17
+# KERNEL: TIME =                12650, data_out =   1, mem =  17
+# KERNEL: TIME =                12670, data_out =   1, mem =  17
+# KERNEL: TIME =                12690, data_out =   1, mem =  17
+# KERNEL: TIME =                12710, data_out =   1, mem =  17
+# KERNEL: TIME =                12730, data_out =   1, mem =  17
+# KERNEL: TIME =                12750, data_out =   1, mem =  17
+# KERNEL: TIME =                12770, data_out =   1, mem =  17
+# KERNEL: TIME =                12790, data_out =   1, mem =  17
+# KERNEL: TIME =                12810, data_out =   1, mem =  17
+# KERNEL: TIME =                12830, data_out =   1, mem =  17
+# KERNEL: TIME =                12850, data_out =   1, mem =  17
+# KERNEL: TIME =                12870, data_out =   1, mem =  17
+# KERNEL: TIME =                12890, data_out =   1, mem =  17
+# KERNEL: TIME =                12910, data_out =   1, mem =  17
+# KERNEL: TIME =                12930, data_out =   1, mem =  17
+# KERNEL: TIME =                12950, data_out =   1, mem =  17
+# KERNEL: TIME =                12970, data_out =   1, mem =  17
+# KERNEL: TIME =                12990, data_out =   1, mem =  17
+# KERNEL: TIME =                13010, data_out =   1, mem =  17
+# KERNEL: TIME =                13030, data_out =   1, mem =  17
+# KERNEL: TIME =                13050, data_out =   1, mem =  17
+# KERNEL: TIME =                13070, data_out =   1, mem =  17
+# KERNEL: TIME =                13090, data_out =   1, mem =  17
+# KERNEL: TIME =                13110, data_out =   1, mem =  17
+# KERNEL: TIME =                13130, data_out =   1, mem =  17
+# KERNEL: TIME =                13150, data_out =   1, mem =  17
+# KERNEL: TIME =                13170, data_out =   1, mem =  17
+# KERNEL: TIME =                13190, data_out =   1, mem =  17
+# KERNEL: TIME =                13210, data_out =   1, mem =  17
+# KERNEL: TIME =                13230, data_out =   1, mem =  17
+# KERNEL: TIME =                13250, data_out =   1, mem =  17
+# KERNEL: TIME =                13270, data_out =   1, mem =  17
+# KERNEL: TIME =                13290, data_out =   1, mem =  17
+# KERNEL: TIME =                13310, data_out =   1, mem =  17
+# KERNEL: TIME =                13330, data_out =   1, mem =  17
+# KERNEL: TIME =                13350, data_out =   1, mem =  17
+# KERNEL: TIME =                13370, data_out =   1, mem =  17
+# KERNEL: TIME =                13390, data_out =   1, mem =  17
+# KERNEL: TIME =                13410, data_out =   1, mem =  17
+# KERNEL: TIME =                13430, data_out =   1, mem =  17
+# KERNEL: TIME =                13450, data_out =   1, mem =  17
+# KERNEL: TIME =                13470, data_out =   1, mem =  17
+# KERNEL: TIME =                13490, data_out =   1, mem =  17
+# KERNEL: TIME =                13510, data_out =   1, mem =  17
+# KERNEL: TIME =                13530, data_out =   1, mem =  17
+# KERNEL: TIME =                13550, data_out =   1, mem =  17
+# KERNEL: TIME =                13570, data_out =   1, mem =  17
+# KERNEL: TIME =                13590, data_out =   1, mem =  17
+# KERNEL: TIME =                13610, data_out =   1, mem =  17
+# KERNEL: TIME =                13630, data_out =   1, mem =  17
+# KERNEL: TIME =                13650, data_out =   1, mem =  17
+# KERNEL: TIME =                13670, data_out =   1, mem =  17
+# KERNEL: TIME =                13690, data_out =   1, mem =  17
+# KERNEL: TIME =                13710, data_out =   1, mem =  17
+# KERNEL: TIME =                13730, data_out =   1, mem =  17
+# KERNEL: TIME =                13750, data_out =   1, mem =  17
+# KERNEL: TIME =                13770, data_out =   1, mem =  17
+# KERNEL: TIME =                13790, data_out =   1, mem =  17
+# KERNEL: TIME =                13810, data_out =   1, mem =  17
+# KERNEL: TIME =                13830, data_out =   1, mem =  17
+# KERNEL: TIME =                13850, data_out =   1, mem =  17
+# KERNEL: TIME =                13870, data_out =   1, mem =  17
+# KERNEL: TIME =                13890, data_out =   1, mem =  17
+# KERNEL: TIME =                13910, data_out =   1, mem =  17
+# KERNEL: TIME =                13930, data_out =   1, mem =  17
+# KERNEL: TIME =                13950, data_out =   1, mem =  17
+# KERNEL: TIME =                13970, data_out =   1, mem =  17
+# KERNEL: TIME =                13990, data_out =   1, mem =  17
+# KERNEL: TIME =                14010, data_out =   1, mem =  17
+# KERNEL: TIME =                14030, data_out =   1, mem =  17
+# KERNEL: TIME =                14050, data_out =   1, mem =  17
+# KERNEL: TIME =                14070, data_out =   1, mem =  17
+# KERNEL: TIME =                14090, data_out =   1, mem =  17
+# KERNEL: TIME =                14110, data_out =   1, mem =  17
+# KERNEL: TIME =                14130, data_out =   1, mem =  17
+# KERNEL: TIME =                14150, data_out =   1, mem =  17
+# KERNEL: TIME =                14170, data_out =   1, mem =  17
+# KERNEL: TIME =                14190, data_out =   1, mem =  17
+# KERNEL: TIME =                14210, data_out =   1, mem =  17
+# KERNEL: TIME =                14230, data_out =   1, mem =  17
+# KERNEL: TIME =                14250, data_out =   1, mem =  17
+# KERNEL: TIME =                14270, data_out =   1, mem =  17
+# KERNEL: TIME =                14290, data_out =   1, mem =  17
+# KERNEL: TIME =                14310, data_out =   1, mem =  17
+# KERNEL: TIME =                14330, data_out =   1, mem =  17
+# KERNEL: TIME =                14350, data_out =   1, mem =  17
+# KERNEL: TIME =                14370, data_out =   1, mem =  17
+# KERNEL: TIME =                14390, data_out =   1, mem =  17
+# KERNEL: TIME =                14410, data_out =   1, mem =  17
+# KERNEL: TIME =                14430, data_out =   1, mem =  17
+# KERNEL: TIME =                14450, data_out =   1, mem =  17
+# KERNEL: TIME =                14470, data_out =   1, mem =  17
+# KERNEL: TIME =                14490, data_out =   1, mem =  17
+# KERNEL: TIME =                14510, data_out =   1, mem =  17
+# KERNEL: TIME =                14530, data_out =   1, mem =  17
+# KERNEL: TIME =                14550, data_out =   1, mem =  17
+# KERNEL: TIME =                14570, data_out =   1, mem =  17
+# KERNEL: TIME =                14590, data_out =   1, mem =  17
+# KERNEL: TIME =                14610, data_out =   1, mem =  17
+# KERNEL: TIME =                14630, data_out =   1, mem =  17
+# KERNEL: TIME =                14650, data_out =   1, mem =  17
+# KERNEL: TIME =                14670, data_out =   1, mem =  17
+# KERNEL: TIME =                14690, data_out =   1, mem =  17
+# KERNEL: TIME =                14710, data_out =   1, mem =  17
+# KERNEL: TIME =                14730, data_out =   1, mem =  17
+# KERNEL: TIME =                14750, data_out =   1, mem =  17
+# KERNEL: TIME =                14770, data_out =   1, mem =  17
+# KERNEL: TIME =                14790, data_out =   1, mem =  17
+# KERNEL: TIME =                14810, data_out =   1, mem =  17
+# KERNEL: TIME =                14830, data_out =   1, mem =  17
+# KERNEL: TIME =                14850, data_out =   1, mem =  17
+# KERNEL: TIME =                14870, data_out =   1, mem =  17
+# KERNEL: TIME =                14890, data_out =   1, mem =  17
+# KERNEL: TIME =                14910, data_out =   1, mem =  17
+# KERNEL: TIME =                14930, data_out =   1, mem =  17
+# KERNEL: TIME =                14950, data_out =   1, mem =  17
+# KERNEL: TIME =                14970, data_out =   1, mem =  17
+# KERNEL: TIME =                14990, data_out =   1, mem =  17
+# KERNEL: TIME =                15010, data_out =   1, mem =  17
+# KERNEL: TIME =                15030, data_out =   1, mem =  17
+# KERNEL: TIME =                15050, data_out =   1, mem =  17
+# KERNEL: TIME =                15070, data_out =   1, mem =  17
+# KERNEL: TIME =                15090, data_out =   1, mem =  17
+# KERNEL: TIME =                15110, data_out =   1, mem =  17
+# KERNEL: TIME =                15130, data_out =   1, mem =  17
+# KERNEL: TIME =                15150, data_out =   1, mem =  17
+# KERNEL: TIME =                15170, data_out =   1, mem =  17
+# KERNEL: TIME =                15190, data_out =   1, mem =  17
+# KERNEL: TIME =                15210, data_out =   1, mem =  17
+# KERNEL: TIME =                15230, data_out =   1, mem =  17
+# KERNEL: TIME =                15250, data_out =   1, mem =  17
+# KERNEL: TIME =                15270, data_out =   1, mem =  17
+# KERNEL: TIME =                15290, data_out =   1, mem =  17
+# KERNEL: TIME =                15310, data_out =   1, mem =  17
+# KERNEL: TIME =                15330, data_out =   1, mem =  17
+# KERNEL: TIME =                15350, data_out =   1, mem =  17
+# KERNEL: TIME =                15370, data_out =   1, mem =  17
+# KERNEL: TIME =                15390, data_out =   1, mem =  17
+# KERNEL: TIME =                15410, data_out =   1, mem =  17
+# KERNEL: TIME =                15430, data_out =   1, mem =  17
+# KERNEL: TIME =                15450, data_out =   1, mem =  17
+# KERNEL: TIME =                15470, data_out =   1, mem =  17
+# KERNEL: TIME =                15490, data_out =   1, mem =  17
+# KERNEL: TIME =                15510, data_out =   1, mem =  17
+# KERNEL: TIME =                15530, data_out =   1, mem =  17
+# KERNEL: TIME =                15550, data_out =   1, mem =  17
+# KERNEL: TIME =                15570, data_out =   1, mem =  17
+# KERNEL: TIME =                15590, data_out =   1, mem =  17
+# KERNEL: TIME =                15610, data_out =   1, mem =  17
+# KERNEL: TIME =                15630, data_out =   1, mem =  17
+# KERNEL: TIME =                15650, data_out =   1, mem =  17
+# KERNEL: TIME =                15670, data_out =   1, mem =  17
+# KERNEL: TIME =                15690, data_out =   1, mem =  17
+# KERNEL: TIME =                15710, data_out =   1, mem =  17
+# KERNEL: TIME =                15730, data_out =   1, mem =  17
+# KERNEL: TIME =                15750, data_out =   1, mem =  17
+# KERNEL: TIME =                15770, data_out =   1, mem =  17
+# KERNEL: TIME =                15790, data_out =   1, mem =  17
+# KERNEL: TIME =                15810, data_out =   1, mem =  17
+# KERNEL: TIME =                15830, data_out =   1, mem =  17
+# KERNEL: TIME =                15850, data_out =   1, mem =  17
+# KERNEL: TIME =                15870, data_out =   1, mem =  17
+# KERNEL: TIME =                15890, data_out =   1, mem =  17
+# KERNEL: TIME =                15910, data_out =   1, mem =  17
+# KERNEL: TIME =                15930, data_out =   1, mem =  17
+# KERNEL: TIME =                15950, data_out =   1, mem =  17
+# KERNEL: TIME =                15970, data_out =   1, mem =  17
+# KERNEL: TIME =                15990, data_out =   1, mem =  17
+# KERNEL: TIME =                16010, data_out =   1, mem =  17
+# KERNEL: TIME =                16030, data_out =   1, mem =  17
+# KERNEL: TIME =                16050, data_out =   1, mem =  17
+# KERNEL: TIME =                16070, data_out =   1, mem =  17
+# KERNEL: TIME =                16090, data_out =   1, mem =  17
+# KERNEL: TIME =                16110, data_out =   1, mem =  17
+# KERNEL: TIME =                16130, data_out =   1, mem =  17
+# KERNEL: TIME =                16150, data_out =   1, mem =  17
+# KERNEL: TIME =                16170, data_out =   1, mem =  17
+# KERNEL: TIME =                16190, data_out =   1, mem =  17
+# KERNEL: TIME =                16210, data_out =   1, mem =  17
+# KERNEL: TIME =                16230, data_out =   1, mem =  17
+# KERNEL: TIME =                16250, data_out =   1, mem =  17
+# KERNEL: TIME =                16270, data_out =   1, mem =  17
+# KERNEL: TIME =                16290, data_out =   1, mem =  17
+# KERNEL: TIME =                16310, data_out =   1, mem =  17
+# KERNEL: TIME =                16330, data_out =   1, mem =  17
+# KERNEL: TIME =                16350, data_out =   1, mem =  17
+# KERNEL: TIME =                16370, data_out =   1, mem =  17
+# KERNEL: TIME =                16390, data_out =   1, mem =  17
+# KERNEL: TIME =                16410, data_out =   1, mem =  17
+# KERNEL: TIME =                16430, data_out =   1, mem =  17
+# KERNEL: TIME =                16450, data_out =   1, mem =  17
+# KERNEL: TIME =                16470, data_out =   1, mem =  17
+# KERNEL: TIME =                16490, data_out =   1, mem =  17
+# KERNEL: TIME =                16510, data_out =   1, mem =  17
+# KERNEL: TIME =                16530, data_out =   1, mem =  17
+# KERNEL: TIME =                16550, data_out =   1, mem =  17
+# KERNEL: TIME =                16570, data_out =   1, mem =  17
+# KERNEL: TIME =                16590, data_out =   1, mem =  17
+# KERNEL: TIME =                16610, data_out =   1, mem =  17
+# KERNEL: TIME =                16630, data_out =   1, mem =  17
+# KERNEL: TIME =                16650, data_out =   1, mem =  17
+# KERNEL: TIME =                16670, data_out =   1, mem =  17
+# KERNEL: TIME =                16690, data_out =   1, mem =  17
+# KERNEL: TIME =                16710, data_out =   1, mem =  17
+# KERNEL: TIME =                16730, data_out =   1, mem =  17
+# KERNEL: TIME =                16750, data_out =   1, mem =  17
+# KERNEL: TIME =                16770, data_out =   1, mem =  17
+# KERNEL: TIME =                16790, data_out =   1, mem =  17
+# KERNEL: TIME =                16810, data_out =   1, mem =  17
+# KERNEL: TIME =                16830, data_out =   1, mem =  17
+# KERNEL: TIME =                16850, data_out =   1, mem =  17
+# KERNEL: TIME =                16870, data_out =   1, mem =  17
+# KERNEL: TIME =                16890, data_out =   1, mem =  17
+# KERNEL: TIME =                16910, data_out =   1, mem =  17
+# KERNEL: TIME =                16930, data_out =   1, mem =  17
+# KERNEL: TIME =                16950, data_out =   1, mem =  17
+# KERNEL: TIME =                16970, data_out =   1, mem =  17
+# KERNEL: TIME =                16990, data_out =   1, mem =  17
+# KERNEL: TIME =                17010, data_out =   1, mem =  17
+# KERNEL: TIME =                17030, data_out =   1, mem =  17
+# KERNEL: TIME =                17050, data_out =   1, mem =  17
+# KERNEL: TIME =                17070, data_out =   1, mem =  17
+# KERNEL: TIME =                17090, data_out =   1, mem =  17
+# KERNEL: TIME =                17110, data_out =   1, mem =  17
+# KERNEL: TIME =                17130, data_out =   1, mem =  17
+# KERNEL: TIME =                17150, data_out =   1, mem =  17
+# KERNEL: TIME =                17170, data_out =   1, mem =  17
+# KERNEL: TIME =                17190, data_out =   1, mem =  17
+# KERNEL: TIME =                17210, data_out =   1, mem =  17
+# KERNEL: TIME =                17230, data_out =   1, mem =  17
+# KERNEL: TIME =                17250, data_out =   1, mem =  17
+# KERNEL: TIME =                17270, data_out =   1, mem =  17
+# KERNEL: TIME =                17290, data_out =   1, mem =  17
+# KERNEL: TIME =                17310, data_out =   1, mem =  17
+# KERNEL: TIME =                17330, data_out =   1, mem =  17
+# KERNEL: TIME =                17350, data_out =   1, mem =  17
+# KERNEL: TIME =                17370, data_out =   1, mem =  17
+# KERNEL: TIME =                17390, data_out =   1, mem =  17
+# KERNEL: TIME =                17410, data_out =   1, mem =  17
+# KERNEL: TIME =                17430, data_out =   1, mem =  17
+# KERNEL: TIME =                17450, data_out =   1, mem =  17
+# KERNEL: TIME =                17470, data_out =   1, mem =  17
+# KERNEL: TIME =                17490, data_out =   1, mem =  17
+# KERNEL: TIME =                17510, data_out =   1, mem =  17
+# KERNEL: TIME =                17530, data_out =   1, mem =  17
+# KERNEL: TIME =                17550, data_out =   1, mem =  17
+# KERNEL: TIME =                17570, data_out =   1, mem =  17
+# KERNEL: TIME =                17590, data_out =   1, mem =  17
+# KERNEL: TIME =                17610, data_out =   1, mem =  17
+# KERNEL: TIME =                17630, data_out =   1, mem =  17
+# KERNEL: TIME =                17650, data_out =   1, mem =  17
+# KERNEL: TIME =                17670, data_out =   1, mem =  17
+# KERNEL: TIME =                17690, data_out =   1, mem =  17
+# KERNEL: TIME =                17710, data_out =   1, mem =  17
+# KERNEL: TIME =                17730, data_out =   1, mem =  17
+# KERNEL: TIME =                17750, data_out =   1, mem =  17
+# KERNEL: TIME =                17770, data_out =   1, mem =  17
+# KERNEL: TIME =                17790, data_out =   1, mem =  17
+# KERNEL: TIME =                17810, data_out =   1, mem =  17
+# KERNEL: TIME =                17830, data_out =   1, mem =  17
+# KERNEL: TIME =                17850, data_out =   1, mem =  17
+# KERNEL: TIME =                17870, data_out =   1, mem =  17
+# KERNEL: TIME =                17890, data_out =   1, mem =  17
+# KERNEL: TIME =                17910, data_out =   1, mem =  17
+# KERNEL: TIME =                17930, data_out =   1, mem =  17
+# KERNEL: TIME =                17950, data_out =   1, mem =  17
+# KERNEL: TIME =                17970, data_out =   1, mem =  17
+# KERNEL: TIME =                17990, data_out =   1, mem =  17
+# KERNEL: TIME =                18010, data_out =   1, mem =  17
+# KERNEL: TIME =                18030, data_out =   1, mem =  17
+# KERNEL: TIME =                18050, data_out =   1, mem =  17
+# KERNEL: TIME =                18070, data_out =   1, mem =  17
+# KERNEL: TIME =                18090, data_out =   1, mem =  17
+# KERNEL: TIME =                18110, data_out =   1, mem =  17
+# KERNEL: TIME =                18130, data_out =   1, mem =  17
+# KERNEL: TIME =                18150, data_out =   1, mem =  17
+# KERNEL: TIME =                18170, data_out =   1, mem =  17
+# KERNEL: TIME =                18190, data_out =   1, mem =  17
+# KERNEL: TIME =                18210, data_out =   1, mem =  17
+# KERNEL: TIME =                18230, data_out =   1, mem =  17
+# KERNEL: TIME =                18250, data_out =   1, mem =  17
+# KERNEL: TIME =                18270, data_out =   1, mem =  17
+# KERNEL: TIME =                18290, data_out =   1, mem =  17
+# KERNEL: TIME =                18310, data_out =   1, mem =  17
+# KERNEL: TIME =                18330, data_out =   1, mem =  17
+# KERNEL: TIME =                18350, data_out =   1, mem =  17
+# KERNEL: TIME =                18370, data_out =   1, mem =  17
+# KERNEL: TIME =                18390, data_out =   1, mem =  17
+# KERNEL: TIME =                18410, data_out =   1, mem =  17
+# KERNEL: TIME =                18430, data_out =   1, mem =  17
+# KERNEL: TIME =                18450, data_out =   1, mem =  17
+# KERNEL: TIME =                18470, data_out =   1, mem =  17
+# KERNEL: TIME =                18490, data_out =   1, mem =  17
+# KERNEL: TIME =                18510, data_out =   1, mem =  17
+# KERNEL: TIME =                18530, data_out =   1, mem =  17
+# KERNEL: TIME =                18550, data_out =   1, mem =  17
+# KERNEL: TIME =                18570, data_out =   1, mem =  17
+# KERNEL: TIME =                18590, data_out =   1, mem =  17
+# KERNEL: TIME =                18610, data_out =   1, mem =  17
+# KERNEL: TIME =                18630, data_out =   1, mem =  17
+# KERNEL: TIME =                18650, data_out =   1, mem =  17
+# KERNEL: TIME =                18670, data_out =   1, mem =  17
+# KERNEL: TIME =                18690, data_out =   1, mem =  17
+# KERNEL: TIME =                18710, data_out =   1, mem =  17
+# KERNEL: TIME =                18730, data_out =   1, mem =  17
+# KERNEL: TIME =                18750, data_out =   1, mem =  17
+# KERNEL: TIME =                18770, data_out =   1, mem =  17
+# KERNEL: TIME =                18790, data_out =   1, mem =  17
+# KERNEL: TIME =                18810, data_out =   1, mem =  17
+# KERNEL: TIME =                18830, data_out =   1, mem =  17
+# KERNEL: TIME =                18850, data_out =   1, mem =  17
+# KERNEL: TIME =                18870, data_out =   1, mem =  17
+# KERNEL: TIME =                18890, data_out =   1, mem =  17
+# KERNEL: TIME =                18910, data_out =   1, mem =  17
+# KERNEL: TIME =                18930, data_out =   1, mem =  17
+# KERNEL: TIME =                18950, data_out =   1, mem =  17
+# KERNEL: TIME =                18970, data_out =   1, mem =  17
+# KERNEL: TIME =                18990, data_out =   1, mem =  17
+# KERNEL: TIME =                19010, data_out =   1, mem =  17
+# KERNEL: TIME =                19030, data_out =   1, mem =  17
+# KERNEL: TIME =                19050, data_out =   1, mem =  17
+# KERNEL: TIME =                19070, data_out =   1, mem =  17
+# KERNEL: TIME =                19090, data_out =   1, mem =  17
+# KERNEL: TIME =                19110, data_out =   1, mem =  17
+# KERNEL: TIME =                19130, data_out =   1, mem =  17
+# KERNEL: TIME =                19150, data_out =   1, mem =  17
+# KERNEL: TIME =                19170, data_out =   1, mem =  17
+# KERNEL: TIME =                19190, data_out =   1, mem =  17
+# KERNEL: TIME =                19210, data_out =   1, mem =  17
+# KERNEL: TIME =                19230, data_out =   1, mem =  17
+# KERNEL: TIME =                19250, data_out =   1, mem =  17
+# KERNEL: TIME =                19270, data_out =   1, mem =  17
+# KERNEL: TIME =                19290, data_out =   1, mem =  17
+# KERNEL: TIME =                19310, data_out =   1, mem =  17
+# KERNEL: TIME =                19330, data_out =   1, mem =  17
+# KERNEL: TIME =                19350, data_out =   1, mem =  17
+# KERNEL: TIME =                19370, data_out =   1, mem =  17
+# KERNEL: TIME =                19390, data_out =   1, mem =  17
+# KERNEL: TIME =                19410, data_out =   1, mem =  17
+# KERNEL: TIME =                19430, data_out =   1, mem =  17
+# KERNEL: TIME =                19450, data_out =   1, mem =  17
+# KERNEL: TIME =                19470, data_out =   1, mem =  17
+# KERNEL: TIME =                19490, data_out =   1, mem =  17
+# KERNEL: TIME =                19510, data_out =   1, mem =  17
+# KERNEL: TIME =                19530, data_out =   1, mem =  17
+# KERNEL: TIME =                19550, data_out =   1, mem =  17
+# KERNEL: TIME =                19570, data_out =   1, mem =  17
+# KERNEL: TIME =                19590, data_out =   1, mem =  17
+# KERNEL: TIME =                19610, data_out =   1, mem =  17
+# KERNEL: TIME =                19630, data_out =   1, mem =  17
+# KERNEL: TIME =                19650, data_out =   1, mem =  17
+# KERNEL: TIME =                19670, data_out =   1, mem =  17
+# KERNEL: TIME =                19690, data_out =   1, mem =  17
+# KERNEL: TIME =                19710, data_out =   1, mem =  17
+# KERNEL: TIME =                19730, data_out =   1, mem =  17
+# KERNEL: TIME =                19750, data_out =   1, mem =  17
+# KERNEL: TIME =                19770, data_out =   1, mem =  17
+# KERNEL: TIME =                19790, data_out =   1, mem =  17
+# KERNEL: TIME =                19810, data_out =   1, mem =  17
+# KERNEL: TIME =                19830, data_out =   1, mem =  17
+# KERNEL: TIME =                19850, data_out =   1, mem =  17
+# KERNEL: TIME =                19870, data_out =   1, mem =  17
+# KERNEL: TIME =                19890, data_out =   1, mem =  17
+# KERNEL: TIME =                19910, data_out =   1, mem =  17
+# KERNEL: TIME =                19930, data_out =   1, mem =  17
+# KERNEL: TIME =                19950, data_out =   1, mem =  17
+# KERNEL: TIME =                19970, data_out =   1, mem =  17
+# KERNEL: TIME =                19990, data_out =   1, mem =  17
+# KERNEL: TIME =                20010, data_out =   1, mem =  17
+# KERNEL: TIME =                20030, data_out =   1, mem =  17
+# KERNEL: TIME =                20050, data_out =   1, mem =  17
+# KERNEL: TIME =                20070, data_out =   1, mem =  17
+# KERNEL: TIME =                20090, data_out =   1, mem =  17
+# KERNEL: TIME =                20110, data_out =   1, mem =  17
+# KERNEL: TIME =                20130, data_out =   1, mem =  17
+# KERNEL: TIME =                20150, data_out =   1, mem =  17
+# KERNEL: TIME =                20170, data_out =   1, mem =  17
+# KERNEL: TIME =                20190, data_out =   1, mem =  17
+# KERNEL: TIME =                20210, data_out =   1, mem =  17
+# KERNEL: TIME =                20230, data_out =   1, mem =  17
+# KERNEL: TIME =                20250, data_out =   1, mem =  17
+# KERNEL: TIME =                20270, data_out =   1, mem =  17
+# KERNEL: TIME =                20290, data_out =   1, mem =  17
+# KERNEL: TIME =                20310, data_out =   1, mem =  17
+# KERNEL: TIME =                20330, data_out =   1, mem =  17
+# KERNEL: TIME =                20350, data_out =   1, mem =  17
+# KERNEL: TIME =                20370, data_out =   1, mem =  17
+# KERNEL: TIME =                20390, data_out =   1, mem =  17
+# KERNEL: TIME =                20410, data_out =   1, mem =  17
+# KERNEL: TIME =                20430, data_out =   1, mem =  17
+# KERNEL: TIME =                20450, data_out =   1, mem =  17
+# KERNEL: TIME =                20470, data_out =   1, mem =  17
+# KERNEL: TIME =                20490, data_out =   1, mem =  17
+# KERNEL: TIME =                20510, data_out =   1, mem =  17
+# KERNEL: TIME =                20530, data_out =   1, mem =  17
+# KERNEL: TIME =                20550, data_out =   1, mem =  17
+# KERNEL: TIME =                20570, data_out =   1, mem =  17
+# KERNEL: TIME =                20590, data_out =   1, mem =  17
+# KERNEL: TIME =                20610, data_out =   1, mem =  17
+# KERNEL: TIME =                20630, data_out =   1, mem =  17
+# KERNEL: TIME =                20650, data_out =   1, mem =  17
+# KERNEL: TIME =                20670, data_out =   1, mem =  17
+# KERNEL: TIME =                20690, data_out =   1, mem =  17
+# KERNEL: TIME =                20710, data_out =   1, mem =  17
+# KERNEL: TIME =                20730, data_out =   1, mem =  17
+# KERNEL: TIME =                20750, data_out =   1, mem =  17
+# KERNEL: TIME =                20770, data_out =   1, mem =  17
+# KERNEL: TIME =                20790, data_out =   1, mem =  17
+# KERNEL: TIME =                20810, data_out =   1, mem =  17
+# KERNEL: TIME =                20830, data_out =   1, mem =  17
+# KERNEL: TIME =                20850, data_out =   1, mem =  17
+# KERNEL: TIME =                20870, data_out =   1, mem =  17
+# KERNEL: TIME =                20890, data_out =   1, mem =  17
+# KERNEL: TIME =                20910, data_out =   1, mem =  17
+# KERNEL: TIME =                20930, data_out =   1, mem =  17
+# KERNEL: TIME =                20950, data_out =   1, mem =  17
+# KERNEL: TIME =                20970, data_out =   1, mem =  17
+# KERNEL: TIME =                20990, data_out =   1, mem =  17
+# KERNEL: TIME =                21010, data_out =   1, mem =  17
+# KERNEL: TIME =                21030, data_out =   1, mem =  17
+# KERNEL: TIME =                21050, data_out =   1, mem =  17
+# KERNEL: TIME =                21070, data_out =   1, mem =  17
+# KERNEL: TIME =                21090, data_out =   1, mem =  17
+# KERNEL: TIME =                21110, data_out =   1, mem =  17
+# KERNEL: TIME =                21130, data_out =   1, mem =  17
+# KERNEL: TIME =                21150, data_out =   1, mem =  17
+# KERNEL: TIME =                21170, data_out =   1, mem =  17
+# KERNEL: TIME =                21190, data_out =   1, mem =  17
+# KERNEL: TIME =                21210, data_out =   1, mem =  17
+# KERNEL: TIME =                21230, data_out =   1, mem =  17
+# KERNEL: TIME =                21250, data_out =   1, mem =  17
+# KERNEL: TIME =                21270, data_out =   1, mem =  17
+# KERNEL: TIME =                21290, data_out =   1, mem =  17
+# KERNEL: TIME =                21310, data_out =   1, mem =  17
+# KERNEL: TIME =                21330, data_out =   1, mem =  17
+# KERNEL: TIME =                21350, data_out =   1, mem =  17
+# KERNEL: TIME =                21370, data_out =   1, mem =  17
+# KERNEL: TIME =                21390, data_out =   1, mem =  17
+# KERNEL: TIME =                21410, data_out =   1, mem =  17
+# KERNEL: TIME =                21430, data_out =   1, mem =  17
+# KERNEL: TIME =                21450, data_out =   1, mem =  17
+# KERNEL: TIME =                21470, data_out =   1, mem =  17
+# KERNEL: TIME =                21490, data_out =   1, mem =  17
+# KERNEL: TIME =                21510, data_out =   1, mem =  17
+# KERNEL: TIME =                21530, data_out =   1, mem =  17
+# KERNEL: TIME =                21550, data_out =   1, mem =  17
+# KERNEL: TIME =                21570, data_out =   1, mem =  17
+# KERNEL: TIME =                21590, data_out =   1, mem =  17
+# KERNEL: TIME =                21610, data_out =   1, mem =  17
+# KERNEL: TIME =                21630, data_out =   1, mem =  17
+# KERNEL: TIME =                21650, data_out =   1, mem =  17
+# KERNEL: TIME =                21670, data_out =   1, mem =  17
+# KERNEL: TIME =                21690, data_out =   1, mem =  17
+# KERNEL: TIME =                21710, data_out =   1, mem =  17
+# KERNEL: TIME =                21730, data_out =   1, mem =  17
+# KERNEL: TIME =                21750, data_out =   1, mem =  17
+# KERNEL: TIME =                21770, data_out =   1, mem =  17
+# KERNEL: TIME =                21790, data_out =   1, mem =  17
+# KERNEL: TIME =                21810, data_out =   1, mem =  17
+# KERNEL: TIME =                21830, data_out =   1, mem =  17
+# KERNEL: TIME =                21850, data_out =   1, mem =  17
+# KERNEL: TIME =                21870, data_out =   1, mem =  17
+# KERNEL: TIME =                21890, data_out =   1, mem =  17
+# KERNEL: TIME =                21910, data_out =   1, mem =  17
+# KERNEL: TIME =                21930, data_out =   1, mem =  17
+# KERNEL: TIME =                21950, data_out =   1, mem =  17
+# KERNEL: TIME =                21970, data_out =   1, mem =  17
+# KERNEL: TIME =                21990, data_out =   1, mem =  17
+# KERNEL: TIME =                22010, data_out =   1, mem =  17
+# KERNEL: TIME =                22030, data_out =   1, mem =  17
+# KERNEL: TIME =                22050, data_out =   1, mem =  17
+# KERNEL: TIME =                22070, data_out =   1, mem =  17
+# KERNEL: TIME =                22090, data_out =   1, mem =  17
+# KERNEL: TIME =                22110, data_out =   1, mem =  17
+# KERNEL: TIME =                22130, data_out =   1, mem =  17
+# KERNEL: TIME =                22150, data_out =   1, mem =  17
+# KERNEL: TIME =                22170, data_out =   1, mem =  17
+# KERNEL: TIME =                22190, data_out =   1, mem =  17
+# KERNEL: TIME =                22210, data_out =   1, mem =  17
+# KERNEL: TIME =                22230, data_out =   1, mem =  17
+# KERNEL: TIME =                22250, data_out =   1, mem =  17
+# KERNEL: TIME =                22270, data_out =   1, mem =  17
+# KERNEL: TIME =                22290, data_out =   1, mem =  17
+# KERNEL: TIME =                22310, data_out =   1, mem =  17
+# KERNEL: TIME =                22330, data_out =   1, mem =  17
+# KERNEL: TIME =                22350, data_out =   1, mem =  17
+# KERNEL: TIME =                22370, data_out =   1, mem =  17
+# KERNEL: TIME =                22390, data_out =   1, mem =  17
+# KERNEL: TIME =                22410, data_out =   1, mem =  17
+# KERNEL: TIME =                22430, data_out =   1, mem =  17
+# KERNEL: TIME =                22450, data_out =   1, mem =  17
+# KERNEL: TIME =                22470, data_out =   1, mem =  17
+# KERNEL: TIME =                22490, data_out =   1, mem =  17
+# KERNEL: TIME =                22510, data_out =   1, mem =  17
+# KERNEL: TIME =                22530, data_out =   1, mem =  17
+# KERNEL: TIME =                22550, data_out =   1, mem =  17
+# KERNEL: TIME =                22570, data_out =   1, mem =  17
+# KERNEL: TIME =                22590, data_out =   1, mem =  17
+# KERNEL: TIME =                22610, data_out =   1, mem =  17
+# KERNEL: TIME =                22630, data_out =   1, mem =  17
+# KERNEL: TIME =                22650, data_out =   1, mem =  17
+# KERNEL: TIME =                22670, data_out =   1, mem =  17
+# KERNEL: TIME =                22690, data_out =   1, mem =  17
+# KERNEL: TIME =                22710, data_out =   1, mem =  17
+# KERNEL: TIME =                22730, data_out =   1, mem =  17
+# KERNEL: TIME =                22750, data_out =   1, mem =  17
+# KERNEL: TIME =                22770, data_out =   1, mem =  17
+# KERNEL: TIME =                22790, data_out =   1, mem =  17
+# KERNEL: TIME =                22810, data_out =   1, mem =  17
+# KERNEL: TIME =                22830, data_out =   1, mem =  17
+# KERNEL: TIME =                22850, data_out =   1, mem =  17
+# KERNEL: TIME =                22870, data_out =   1, mem =  17
+# KERNEL: TIME =                22890, data_out =   1, mem =  17
+# KERNEL: TIME =                22910, data_out =   1, mem =  17
+# KERNEL: TIME =                22930, data_out =   1, mem =  17
+# KERNEL: TIME =                22950, data_out =   1, mem =  17
+# KERNEL: TIME =                22970, data_out =   1, mem =  17
+# KERNEL: TIME =                22990, data_out =   1, mem =  17
+# KERNEL: TIME =                23010, data_out =   1, mem =  17
+# KERNEL: TIME =                23030, data_out =   1, mem =  17
+# KERNEL: TIME =                23050, data_out =   1, mem =  17
+# KERNEL: TIME =                23070, data_out =   1, mem =  17
+# KERNEL: TIME =                23090, data_out =   1, mem =  17
+# KERNEL: TIME =                23110, data_out =   1, mem =  17
+# KERNEL: TIME =                23130, data_out =   1, mem =  17
+# KERNEL: TIME =                23150, data_out =   1, mem =  17
+# KERNEL: TIME =                23170, data_out =   1, mem =  17
+# KERNEL: TIME =                23190, data_out =   1, mem =  17
+# KERNEL: TIME =                23210, data_out =   1, mem =  17
+# KERNEL: TIME =                23230, data_out =   1, mem =  17
+# KERNEL: TIME =                23250, data_out =   1, mem =  17
+# KERNEL: TIME =                23270, data_out =   1, mem =  17
+# KERNEL: TIME =                23290, data_out =   1, mem =  17
+# KERNEL: TIME =                23310, data_out =   1, mem =  17
+# KERNEL: TIME =                23330, data_out =   1, mem =  17
+# KERNEL: TIME =                23350, data_out =   1, mem =  17
+# KERNEL: TIME =                23370, data_out =   1, mem =  17
+# KERNEL: TIME =                23390, data_out =   1, mem =  17
+# KERNEL: TIME =                23410, data_out =   1, mem =  17
+# KERNEL: TIME =                23430, data_out =   1, mem =  17
+# KERNEL: TIME =                23450, data_out =   1, mem =  17
+# KERNEL: TIME =                23470, data_out =   1, mem =  17
+# KERNEL: TIME =                23490, data_out =   1, mem =  17
+# KERNEL: TIME =                23510, data_out =   1, mem =  17
+# KERNEL: TIME =                23530, data_out =   1, mem =  17
+# KERNEL: TIME =                23550, data_out =   1, mem =  17
+# KERNEL: TIME =                23570, data_out =   1, mem =  17
+# KERNEL: TIME =                23590, data_out =   1, mem =  17
+# KERNEL: TIME =                23610, data_out =   1, mem =  17
+# KERNEL: TIME =                23630, data_out =   1, mem =  17
+# KERNEL: TIME =                23650, data_out =   1, mem =  17
+# KERNEL: TIME =                23670, data_out =   1, mem =  17
+# KERNEL: TIME =                23690, data_out =   1, mem =  17
+# KERNEL: TIME =                23710, data_out =   1, mem =  17
+# KERNEL: TIME =                23730, data_out =   1, mem =  17
+# KERNEL: TIME =                23750, data_out =   1, mem =  17
+# KERNEL: TIME =                23770, data_out =   1, mem =  17
+# KERNEL: TIME =                23790, data_out =   1, mem =  17
+# KERNEL: TIME =                23810, data_out =   1, mem =  17
+# KERNEL: TIME =                23830, data_out =   1, mem =  17
+# KERNEL: TIME =                23850, data_out =   1, mem =  17
+# KERNEL: TIME =                23870, data_out =   1, mem =  17
+# KERNEL: TIME =                23890, data_out =   1, mem =  17
+# KERNEL: TIME =                23910, data_out =   1, mem =  17
+# KERNEL: TIME =                23930, data_out =   1, mem =  17
+# KERNEL: TIME =                23950, data_out =   1, mem =  17
+# KERNEL: TIME =                23970, data_out =   1, mem =  17
+# KERNEL: TIME =                23990, data_out =   1, mem =  17
+# KERNEL: TIME =                24010, data_out =   1, mem =  17
+# KERNEL: TIME =                24030, data_out =   1, mem =  17
+# KERNEL: TIME =                24050, data_out =   1, mem =  17
+# KERNEL: TIME =                24070, data_out =   1, mem =  17
+# KERNEL: TIME =                24090, data_out =   1, mem =  17
+# KERNEL: TIME =                24110, data_out =   1, mem =  17
+# KERNEL: TIME =                24130, data_out =   1, mem =  17
+# KERNEL: TIME =                24150, data_out =   1, mem =  17
+# KERNEL: TIME =                24170, data_out =   1, mem =  17
+# KERNEL: TIME =                24190, data_out =   1, mem =  17
+# KERNEL: TIME =                24210, data_out =   1, mem =  17
+# KERNEL: TIME =                24230, data_out =   1, mem =  17
+# KERNEL: TIME =                24250, data_out =   1, mem =  17
+# KERNEL: TIME =                24270, data_out =   1, mem =  17
+# KERNEL: TIME =                24290, data_out =   1, mem =  17
+# KERNEL: TIME =                24310, data_out =   1, mem =  17
+# KERNEL: TIME =                24330, data_out =   1, mem =  17
+# KERNEL: TIME =                24350, data_out =   1, mem =  17
+# KERNEL: TIME =                24370, data_out =   1, mem =  17
+# KERNEL: TIME =                24390, data_out =   1, mem =  17
+# KERNEL: TIME =                24410, data_out =   1, mem =  17
+# KERNEL: TIME =                24430, data_out =   1, mem =  17
+# KERNEL: TIME =                24450, data_out =   1, mem =  17
+# KERNEL: TIME =                24470, data_out =   1, mem =  17
+# KERNEL: TIME =                24490, data_out =   1, mem =  17
+# KERNEL: TIME =                24510, data_out =   1, mem =  17
+# KERNEL: TIME =                24530, data_out =   1, mem =  17
+# KERNEL: TIME =                24550, data_out =   1, mem =  17
+# KERNEL: TIME =                24570, data_out =   1, mem =  17
+# KERNEL: TIME =                24590, data_out =   1, mem =  17
+# KERNEL: TIME =                24610, data_out =   1, mem =  17
+# KERNEL: TIME =                24630, data_out =   1, mem =  17
+# KERNEL: TIME =                24650, data_out =   1, mem =  17
+# KERNEL: TIME =                24670, data_out =   1, mem =  17
+# KERNEL: TIME =                24690, data_out =   1, mem =  17
+# KERNEL: TIME =                24710, data_out =   1, mem =  17
+# KERNEL: TIME =                24730, data_out =   1, mem =  17
+# KERNEL: TIME =                24750, data_out =   1, mem =  17
+# KERNEL: TIME =                24770, data_out =   1, mem =  17
+# KERNEL: TIME =                24790, data_out =   1, mem =  17
+# KERNEL: TIME =                24810, data_out =   1, mem =  17
+# KERNEL: TIME =                24830, data_out =   1, mem =  17
+# KERNEL: TIME =                24850, data_out =   1, mem =  17
+# KERNEL: TIME =                24870, data_out =   1, mem =  17
+# KERNEL: TIME =                24890, data_out =   1, mem =  17
+# KERNEL: TIME =                24910, data_out =   1, mem =  17
+# KERNEL: TIME =                24930, data_out =   1, mem =  17
+# KERNEL: TIME =                24950, data_out =   1, mem =  17
+# KERNEL: TIME =                24970, data_out =   1, mem =  17
+# KERNEL: TIME =                24990, data_out =   1, mem =  17
+# KERNEL: TIME =                25010, data_out =   1, mem =  17
+# KERNEL: TIME =                25030, data_out =   1, mem =  17
+# KERNEL: TIME =                25050, data_out =   1, mem =  17
+# KERNEL: TIME =                25070, data_out =   1, mem =  17
+# KERNEL: TIME =                25090, data_out =   1, mem =  17
+# KERNEL: TIME =                25110, data_out =   1, mem =  17
+# KERNEL: TIME =                25130, data_out =   1, mem =  17
+# KERNEL: TIME =                25150, data_out =   1, mem =  17
+# KERNEL: TIME =                25170, data_out =   1, mem =  17
+# KERNEL: TIME =                25190, data_out =   1, mem =  17
+# KERNEL: TIME =                25210, data_out =   1, mem =  17
+# KERNEL: TIME =                25230, data_out =   1, mem =  17
+# KERNEL: TIME =                25250, data_out =   1, mem =  17
+# KERNEL: TIME =                25270, data_out =   1, mem =  17
+# KERNEL: TIME =                25290, data_out =   1, mem =  17
+# KERNEL: TIME =                25310, data_out =   1, mem =  17
+# KERNEL: TIME =                25330, data_out =   1, mem =  17
+# KERNEL: TIME =                25350, data_out =   1, mem =  17
+# KERNEL: TIME =                25370, data_out =   1, mem =  17
+# KERNEL: TIME =                25390, data_out =   1, mem =  17
+# KERNEL: TIME =                25410, data_out =   1, mem =  17
+# KERNEL: TIME =                25430, data_out =   1, mem =  17
+# KERNEL: TIME =                25450, data_out =   1, mem =  17
+# KERNEL: TIME =                25470, data_out =   1, mem =  17
+# KERNEL: TIME =                25490, data_out =   1, mem =  17
+# KERNEL: TIME =                25510, data_out =   1, mem =  17
+# KERNEL: TIME =                25530, data_out =   1, mem =  17
+# KERNEL: TIME =                25550, data_out =   1, mem =  17
+# KERNEL: TIME =                25570, data_out =   1, mem =  17
+# KERNEL: TIME =                25590, data_out =   1, mem =  17
+# KERNEL: TIME =                25610, data_out =   1, mem =  17
+# KERNEL: TIME =                25630, data_out =   1, mem =  17
+# KERNEL: TIME =                25650, data_out =   1, mem =  17
+# KERNEL: TIME =                25670, data_out =   1, mem =  17
+# KERNEL: TIME =                25690, data_out =   1, mem =  17
+# KERNEL: TIME =                25710, data_out =   1, mem =  17
+# KERNEL: TIME =                25730, data_out =   1, mem =  17
+# KERNEL: TIME =                25750, data_out =   1, mem =  17
+# KERNEL: TIME =                25770, data_out =   1, mem =  17
+# KERNEL: TIME =                25790, data_out =   1, mem =  17
+# KERNEL: TIME =                25810, data_out =   1, mem =  17
+# KERNEL: TIME =                25830, data_out =   1, mem =  17
+# KERNEL: TIME =                25850, data_out =   1, mem =  17
+# KERNEL: TIME =                25870, data_out =   1, mem =  17
+# KERNEL: TIME =                25890, data_out =   1, mem =  17
+# KERNEL: TIME =                25910, data_out =   1, mem =  17
+# KERNEL: TIME =                25930, data_out =   1, mem =  17
+# KERNEL: TIME =                25950, data_out =   1, mem =  17
+# KERNEL: TIME =                25970, data_out =   1, mem =  17
+# KERNEL: TIME =                25990, data_out =   1, mem =  17
+# KERNEL: TIME =                26010, data_out =   1, mem =  17
+# KERNEL: TIME =                26030, data_out =   1, mem =  17
+# KERNEL: TIME =                26050, data_out =   1, mem =  17
+# KERNEL: TIME =                26070, data_out =   1, mem =  17
+# KERNEL: TIME =                26090, data_out =   1, mem =  17
+# KERNEL: TIME =                26110, data_out =   1, mem =  17
+# KERNEL: TIME =                26130, data_out =   1, mem =  17
+# KERNEL: TIME =                26150, data_out =   1, mem =  17
+# KERNEL: TIME =                26170, data_out =   1, mem =  17
+# KERNEL: TIME =                26190, data_out =   1, mem =  17
+# KERNEL: TIME =                26210, data_out =   1, mem =  17
+# KERNEL: TIME =                26230, data_out =   1, mem =  17
+# KERNEL: TIME =                26250, data_out =   1, mem =  17
+# KERNEL: TIME =                26270, data_out =   1, mem =  17
+# KERNEL: TIME =                26290, data_out =   1, mem =  17
+# KERNEL: TIME =                26310, data_out =   1, mem =  17
+# KERNEL: TIME =                26330, data_out =   1, mem =  17
+# KERNEL: TIME =                26350, data_out =   1, mem =  17
+# KERNEL: TIME =                26370, data_out =   1, mem =  17
+# KERNEL: TIME =                26390, data_out =   1, mem =  17
+# KERNEL: TIME =                26410, data_out =   1, mem =  17
+# KERNEL: TIME =                26430, data_out =   1, mem =  17
+# KERNEL: TIME =                26450, data_out =   1, mem =  17
+# KERNEL: TIME =                26470, data_out =   1, mem =  17
+# KERNEL: TIME =                26490, data_out =   1, mem =  17
+# KERNEL: TIME =                26510, data_out =   1, mem =  17
+# KERNEL: TIME =                26530, data_out =   1, mem =  17
+# KERNEL: TIME =                26550, data_out =   1, mem =  17
+# KERNEL: TIME =                26570, data_out =   1, mem =  17
+# KERNEL: TIME =                26590, data_out =   1, mem =  17
+# KERNEL: TIME =                26610, data_out =   1, mem =  17
+# KERNEL: TIME =                26630, data_out =   1, mem =  17
+# KERNEL: TIME =                26650, data_out =   1, mem =  17
+# KERNEL: TIME =                26670, data_out =   1, mem =  17
+# KERNEL: TIME =                26690, data_out =   1, mem =  17
+# KERNEL: TIME =                26710, data_out =   1, mem =  17
+# KERNEL: TIME =                26730, data_out =   1, mem =  17
+# KERNEL: TIME =                26750, data_out =   1, mem =  17
+# KERNEL: TIME =                26770, data_out =   1, mem =  17
+# KERNEL: TIME =                26790, data_out =   1, mem =  17
+# KERNEL: TIME =                26810, data_out =   1, mem =  17
+# KERNEL: TIME =                26830, data_out =   1, mem =  17
+# KERNEL: TIME =                26850, data_out =   1, mem =  17
+# KERNEL: TIME =                26870, data_out =   1, mem =  17
+# KERNEL: TIME =                26890, data_out =   1, mem =  17
+# KERNEL: TIME =                26910, data_out =   1, mem =  17
+# KERNEL: TIME =                26930, data_out =   1, mem =  17
+# KERNEL: TIME =                26950, data_out =   1, mem =  17
+# KERNEL: TIME =                26970, data_out =   1, mem =  17
+# KERNEL: TIME =                26990, data_out =   1, mem =  17
+# KERNEL: TIME =                27010, data_out =   1, mem =  17
+# KERNEL: TIME =                27030, data_out =   1, mem =  17
+# KERNEL: TIME =                27050, data_out =   1, mem =  17
+# KERNEL: TIME =                27070, data_out =   1, mem =  17
+# KERNEL: TIME =                27090, data_out =   1, mem =  17
+# KERNEL: TIME =                27110, data_out =   1, mem =  17
+# KERNEL: TIME =                27130, data_out =   1, mem =  17
+# KERNEL: TIME =                27150, data_out =   1, mem =  17
+# KERNEL: TIME =                27170, data_out =   1, mem =  17
+# KERNEL: TIME =                27190, data_out =   1, mem =  17
+# KERNEL: TIME =                27210, data_out =   1, mem =  17
+# KERNEL: TIME =                27230, data_out =   1, mem =  17
+# KERNEL: TIME =                27250, data_out =   1, mem =  17
+# KERNEL: TIME =                27270, data_out =   1, mem =  17
+# KERNEL: TIME =                27290, data_out =   1, mem =  17
+# KERNEL: TIME =                27310, data_out =   1, mem =  17
+# KERNEL: TIME =                27330, data_out =   1, mem =  17
+# KERNEL: TIME =                27350, data_out =   1, mem =  17
+# KERNEL: TIME =                27370, data_out =   1, mem =  17
+# KERNEL: TIME =                27390, data_out =   1, mem =  17
+# KERNEL: TIME =                27410, data_out =   1, mem =  17
+# KERNEL: TIME =                27430, data_out =   1, mem =  17
+# KERNEL: TIME =                27450, data_out =   1, mem =  17
+# KERNEL: TIME =                27470, data_out =   1, mem =  17
+# KERNEL: TIME =                27490, data_out =   1, mem =  17
+# KERNEL: TIME =                27510, data_out =   1, mem =  17
+# KERNEL: TIME =                27530, data_out =   1, mem =  17
+# KERNEL: TIME =                27550, data_out =   1, mem =  17
+# KERNEL: TIME =                27570, data_out =   1, mem =  17
+# KERNEL: TIME =                27590, data_out =   1, mem =  17
+# KERNEL: TIME =                27610, data_out =   1, mem =  17
+# KERNEL: TIME =                27630, data_out =   1, mem =  17
+# KERNEL: TIME =                27650, data_out =   1, mem =  17
+# KERNEL: TIME =                27670, data_out =   1, mem =  17
+# KERNEL: TIME =                27690, data_out =   1, mem =  17
+# KERNEL: TIME =                27710, data_out =   1, mem =  17
+# KERNEL: TIME =                27730, data_out =   1, mem =  17
+# KERNEL: TIME =                27750, data_out =   1, mem =  17
+# KERNEL: TIME =                27770, data_out =   1, mem =  17
+# KERNEL: TIME =                27790, data_out =   1, mem =  17
+# KERNEL: TIME =                27810, data_out =   1, mem =  17
+# KERNEL: TIME =                27830, data_out =   1, mem =  17
+# KERNEL: TIME =                27850, data_out =   1, mem =  17
+# KERNEL: TIME =                27870, data_out =   1, mem =  17
+# KERNEL: TIME =                27890, data_out =   1, mem =  17
+# KERNEL: TIME =                27910, data_out =   1, mem =  17
+# KERNEL: TIME =                27930, data_out =   1, mem =  17
+# KERNEL: TIME =                27950, data_out =   1, mem =  17
+# KERNEL: TIME =                27970, data_out =   1, mem =  17
+# KERNEL: TIME =                27990, data_out =   1, mem =  17
+# KERNEL: TIME =                28010, data_out =   1, mem =  17
+# KERNEL: TIME =                28030, data_out =   1, mem =  17
+# KERNEL: TIME =                28050, data_out =   1, mem =  17
+# KERNEL: TIME =                28070, data_out =   1, mem =  17
+# KERNEL: TIME =                28090, data_out =   1, mem =  17
+# KERNEL: TIME =                28110, data_out =   1, mem =  17
+# KERNEL: TIME =                28130, data_out =   1, mem =  17
+# KERNEL: TIME =                28150, data_out =   1, mem =  17
+# KERNEL: TIME =                28170, data_out =   1, mem =  17
+# KERNEL: TIME =                28190, data_out =   1, mem =  17
+# KERNEL: TIME =                28210, data_out =   1, mem =  17
+# KERNEL: TIME =                28230, data_out =   1, mem =  17
+# KERNEL: TIME =                28250, data_out =   1, mem =  17
+# KERNEL: TIME =                28270, data_out =   1, mem =  17
+# KERNEL: TIME =                28290, data_out =   1, mem =  17
+# KERNEL: TIME =                28310, data_out =   1, mem =  17
+# KERNEL: TIME =                28330, data_out =   1, mem =  17
+# KERNEL: TIME =                28350, data_out =   1, mem =  17
+# KERNEL: TIME =                28370, data_out =   1, mem =  17
+# KERNEL: TIME =                28390, data_out =   1, mem =  17
+# KERNEL: TIME =                28410, data_out =   1, mem =  17
+# KERNEL: TIME =                28430, data_out =   1, mem =  17
+# KERNEL: TIME =                28450, data_out =   1, mem =  17
+# KERNEL: TIME =                28470, data_out =   1, mem =  17
+# KERNEL: TIME =                28490, data_out =   1, mem =  17
+# KERNEL: TIME =                28510, data_out =   1, mem =  17
+# KERNEL: TIME =                28530, data_out =   1, mem =  17
+# KERNEL: TIME =                28550, data_out =   1, mem =  17
+# KERNEL: TIME =                28570, data_out =   1, mem =  17
+# KERNEL: TIME =                28590, data_out =   1, mem =  17
+# KERNEL: TIME =                28610, data_out =   1, mem =  17
+# KERNEL: TIME =                28630, data_out =   1, mem =  17
+# KERNEL: TIME =                28650, data_out =   1, mem =  17
+# KERNEL: TIME =                28670, data_out =   1, mem =  17
+# KERNEL: TIME =                28690, data_out =   1, mem =  17
+# KERNEL: TIME =                28710, data_out =   1, mem =  17
+# KERNEL: TIME =                28730, data_out =   1, mem =  17
+# KERNEL: TIME =                28750, data_out =   1, mem =  17
+# KERNEL: TIME =                28770, data_out =   1, mem =  17
+# KERNEL: TIME =                28790, data_out =   1, mem =  17
+# KERNEL: TIME =                28810, data_out =   1, mem =  17
+# KERNEL: TIME =                28830, data_out =   1, mem =  17
+# KERNEL: TIME =                28850, data_out =   1, mem =  17
+# KERNEL: TIME =                28870, data_out =   1, mem =  17
+# KERNEL: TIME =                28890, data_out =   1, mem =  17
+# KERNEL: TIME =                28910, data_out =   1, mem =  17
+# KERNEL: TIME =                28930, data_out =   1, mem =  17
+# KERNEL: TIME =                28950, data_out =   1, mem =  17
+# KERNEL: TIME =                28970, data_out =   1, mem =  17
+# KERNEL: TIME =                28990, data_out =   1, mem =  17
+# KERNEL: TIME =                29010, data_out =   1, mem =  17
+# KERNEL: TIME =                29030, data_out =   1, mem =  17
+# KERNEL: TIME =                29050, data_out =   1, mem =  17
+# KERNEL: TIME =                29070, data_out =   1, mem =  17
+# KERNEL: TIME =                29090, data_out =   1, mem =  17
+# KERNEL: TIME =                29110, data_out =   1, mem =  17
+# KERNEL: TIME =                29130, data_out =   1, mem =  17
+# KERNEL: TIME =                29150, data_out =   1, mem =  17
+# KERNEL: TIME =                29170, data_out =   1, mem =  17
+# KERNEL: TIME =                29190, data_out =   1, mem =  17
+# KERNEL: TIME =                29210, data_out =   1, mem =  17
+# KERNEL: TIME =                29230, data_out =   1, mem =  17
+# KERNEL: TIME =                29250, data_out =   1, mem =  17
+# KERNEL: TIME =                29270, data_out =   1, mem =  17
+# KERNEL: TIME =                29290, data_out =   1, mem =  17
+# KERNEL: TIME =                29310, data_out =   1, mem =  17
+# KERNEL: TIME =                29330, data_out =   1, mem =  17
+# KERNEL: TIME =                29350, data_out =   1, mem =  17
+# KERNEL: TIME =                29370, data_out =   1, mem =  17
+# KERNEL: TIME =                29390, data_out =   1, mem =  17
+# KERNEL: TIME =                29410, data_out =   1, mem =  17
+# KERNEL: TIME =                29430, data_out =   1, mem =  17
+# KERNEL: TIME =                29450, data_out =   1, mem =  17
+# KERNEL: TIME =                29470, data_out =   1, mem =  17
+# KERNEL: TIME =                29490, data_out =   1, mem =  17
+# KERNEL: TIME =                29510, data_out =   1, mem =  17
+# KERNEL: TIME =                29530, data_out =   1, mem =  17
+# KERNEL: TIME =                29550, data_out =   1, mem =  17
+# KERNEL: TIME =                29570, data_out =   1, mem =  17
+# KERNEL: TIME =                29590, data_out =   1, mem =  17
+# KERNEL: TIME =                29610, data_out =   1, mem =  17
+# KERNEL: TIME =                29630, data_out =   1, mem =  17
+# KERNEL: TIME =                29650, data_out =   1, mem =  17
+# KERNEL: TIME =                29670, data_out =   1, mem =  17
+# KERNEL: TIME =                29690, data_out =   1, mem =  17
+# KERNEL: TIME =                29710, data_out =   1, mem =  17
+# KERNEL: TIME =                29730, data_out =   1, mem =  17
+# KERNEL: TIME =                29750, data_out =   1, mem =  17
+# KERNEL: TIME =                29770, data_out =   1, mem =  17
+# KERNEL: TIME =                29790, data_out =   1, mem =  17
+# KERNEL: TIME =                29810, data_out =   1, mem =  17
+# KERNEL: TIME =                29830, data_out =   1, mem =  17
+# KERNEL: TIME =                29850, data_out =   1, mem =  17
+# KERNEL: TIME =                29870, data_out =   1, mem =  17
+# KERNEL: TIME =                29890, data_out =   1, mem =  17
+# KERNEL: TIME =                29910, data_out =   1, mem =  17
+# KERNEL: TIME =                29930, data_out =   1, mem =  17
+# KERNEL: TIME =                29950, data_out =   1, mem =  17
+# KERNEL: TIME =                29970, data_out =   1, mem =  17
+# KERNEL: TIME =                29990, data_out =   1, mem =  17
+# KERNEL: TIME =                30010, data_out =   1, mem =  17
+# KERNEL: TIME =                30030, data_out =   1, mem =  17
+# KERNEL: TIME =                30050, data_out =   1, mem =  17
+# KERNEL: TIME =                30070, data_out =   1, mem =  17
+# KERNEL: TIME =                30090, data_out =   1, mem =  17
+# KERNEL: TIME =                30110, data_out =   1, mem =  17
+# KERNEL: TIME =                30130, data_out =   1, mem =  17
+# KERNEL: TIME =                30150, data_out =   1, mem =  17
+# KERNEL: TIME =                30170, data_out =   1, mem =  17
+# KERNEL: TIME =                30190, data_out =   1, mem =  17
+# KERNEL: TIME =                30210, data_out =   1, mem =  17
+# KERNEL: TIME =                30230, data_out =   1, mem =  17
+# KERNEL: TIME =                30250, data_out =   1, mem =  17
+# KERNEL: TIME =                30270, data_out =   1, mem =  17
+# KERNEL: TIME =                30290, data_out =   1, mem =  17
+# KERNEL: TIME =                30310, data_out =   1, mem =  17
+# KERNEL: TIME =                30330, data_out =   1, mem =  17
+# KERNEL: TIME =                30350, data_out =   1, mem =  17
+# KERNEL: TIME =                30370, data_out =   1, mem =  17
+# KERNEL: TIME =                30390, data_out =   1, mem =  17
+# KERNEL: TIME =                30410, data_out =   1, mem =  17
+# KERNEL: TIME =                30430, data_out =   1, mem =  17
+# KERNEL: TIME =                30450, data_out =   1, mem =  17
+# KERNEL: TIME =                30470, data_out =   1, mem =  17
+# KERNEL: TIME =                30490, data_out =   1, mem =  17
+# KERNEL: TIME =                30510, data_out =   1, mem =  17
+# KERNEL: TIME =                30530, data_out =   1, mem =  17
+# KERNEL: TIME =                30550, data_out =   1, mem =  17
+# KERNEL: TIME =                30570, data_out =   1, mem =  17
+# KERNEL: TIME =                30590, data_out =   1, mem =  17
+# KERNEL: TIME =                30610, data_out =   1, mem =  17
+# KERNEL: TIME =                30630, data_out =   1, mem =  17
+# KERNEL: TIME =                30650, data_out =   1, mem =  17
+# KERNEL: TIME =                30670, data_out =   1, mem =  17
+# KERNEL: TIME =                30690, data_out =   1, mem =  17
+# KERNEL: TIME =                30710, data_out =   1, mem =  17
+# KERNEL: TIME =                30730, data_out =   1, mem =  17
+# KERNEL: TIME =                30750, data_out =   1, mem =  17
+# KERNEL: TIME =                30770, data_out =   1, mem =  17
+# KERNEL: TIME =                30790, data_out =   1, mem =  17
+# KERNEL: TIME =                30810, data_out =   1, mem =  17
+# KERNEL: TIME =                30830, data_out =   1, mem =  17
+# KERNEL: TIME =                30850, data_out =   1, mem =  17
+# KERNEL: TIME =                30870, data_out =   1, mem =  17
+# KERNEL: TIME =                30890, data_out =   1, mem =  17
+# KERNEL: TIME =                30910, data_out =   1, mem =  17
+# KERNEL: TIME =                30930, data_out =   1, mem =  17
+# KERNEL: TIME =                30950, data_out =   1, mem =  17
+# KERNEL: TIME =                30970, data_out =   1, mem =  17
+# KERNEL: TIME =                30990, data_out =   1, mem =  17
+# KERNEL: TIME =                31010, data_out =   1, mem =  17
+# KERNEL: TIME =                31030, data_out =   1, mem =  17
+# KERNEL: TIME =                31050, data_out =   1, mem =  17
+# KERNEL: TIME =                31070, data_out =   1, mem =  17
+# KERNEL: TIME =                31090, data_out =   1, mem =  17
+# KERNEL: TIME =                31110, data_out =   1, mem =  17
+# KERNEL: TIME =                31130, data_out =   1, mem =  17
+# KERNEL: TIME =                31150, data_out =   1, mem =  17
+# KERNEL: TIME =                31170, data_out =   1, mem =  17
+# KERNEL: TIME =                31190, data_out =   1, mem =  17
+# KERNEL: TIME =                31210, data_out =   1, mem =  17
+# KERNEL: TIME =                31230, data_out =   1, mem =  17
+# KERNEL: TIME =                31250, data_out =   1, mem =  17
+# KERNEL: TIME =                31270, data_out =   1, mem =  17
+# KERNEL: TIME =                31290, data_out =   1, mem =  17
+# KERNEL: TIME =                31310, data_out =   1, mem =  17
+# KERNEL: TIME =                31330, data_out =   1, mem =  17
+# KERNEL: TIME =                31350, data_out =   1, mem =  17
+# KERNEL: TIME =                31370, data_out =   1, mem =  17
+# KERNEL: TIME =                31390, data_out =   1, mem =  17
+# KERNEL: TIME =                31410, data_out =   1, mem =  17
+# KERNEL: TIME =                31430, data_out =   1, mem =  17
+# KERNEL: TIME =                31450, data_out =   1, mem =  17
+# KERNEL: TIME =                31470, data_out =   1, mem =  17
+# KERNEL: TIME =                31490, data_out =   1, mem =  17
+# KERNEL: TIME =                31510, data_out =   1, mem =  17
+# KERNEL: TIME =                31530, data_out =   1, mem =  17
+# KERNEL: TIME =                31550, data_out =   1, mem =  17
+# KERNEL: TIME =                31570, data_out =   1, mem =  17
+# KERNEL: TIME =                31590, data_out =   1, mem =  17
+# KERNEL: TIME =                31610, data_out =   1, mem =  17
+# KERNEL: TIME =                31630, data_out =   1, mem =  17
+# KERNEL: TIME =                31650, data_out =   1, mem =  17
+# KERNEL: TIME =                31670, data_out =   1, mem =  17
+# KERNEL: TIME =                31690, data_out =   1, mem =  17
+# KERNEL: TIME =                31710, data_out =   1, mem =  17
+# KERNEL: TIME =                31730, data_out =   1, mem =  17
+# KERNEL: TIME =                31750, data_out =   1, mem =  17
+# KERNEL: TIME =                31770, data_out =   1, mem =  17
+# KERNEL: TIME =                31790, data_out =   1, mem =  17
+# KERNEL: TIME =                31810, data_out =   1, mem =  17
+# KERNEL: TIME =                31830, data_out =   1, mem =  17
+# KERNEL: TIME =                31850, data_out =   1, mem =  17
+# KERNEL: TIME =                31870, data_out =   1, mem =  17
+# KERNEL: TIME =                31890, data_out =   1, mem =  17
+# KERNEL: TIME =                31910, data_out =   1, mem =  17
+# KERNEL: TIME =                31930, data_out =   1, mem =  17
+# KERNEL: TIME =                31950, data_out =   1, mem =  17
+# KERNEL: TIME =                31970, data_out =   1, mem =  17
+# KERNEL: TIME =                31990, data_out =   1, mem =  17
+# KERNEL: TIME =                32010, data_out =   1, mem =  17
+# KERNEL: TIME =                32030, data_out =   1, mem =  17
+# KERNEL: TIME =                32050, data_out =   1, mem =  17
+# KERNEL: TIME =                32070, data_out =   1, mem =  17
+# KERNEL: TIME =                32090, data_out =   1, mem =  17
+# KERNEL: TIME =                32110, data_out =   1, mem =  17
+# KERNEL: TIME =                32130, data_out =   1, mem =  17
+# KERNEL: TIME =                32150, data_out =   1, mem =  17
+# KERNEL: TIME =                32170, data_out =   1, mem =  17
+# KERNEL: TIME =                32190, data_out =   1, mem =  17
+# KERNEL: TIME =                32210, data_out =   1, mem =  17
+# KERNEL: TIME =                32230, data_out =   1, mem =  17
+# KERNEL: TIME =                32250, data_out =   1, mem =  17
+# KERNEL: TIME =                32270, data_out =   1, mem =  17
+# KERNEL: TIME =                32290, data_out =   1, mem =  17
+# KERNEL: TIME =                32310, data_out =   1, mem =  17
+# KERNEL: TIME =                32330, data_out =   1, mem =  17
+# KERNEL: TIME =                32350, data_out =   1, mem =  17
+# KERNEL: TIME =                32370, data_out =   1, mem =  17
+# KERNEL: TIME =                32390, data_out =   1, mem =  17
+# KERNEL: TIME =                32410, data_out =   1, mem =  17
+# KERNEL: TIME =                32430, data_out =   1, mem =  17
+# KERNEL: TIME =                32450, data_out =   1, mem =  17
+# KERNEL: TIME =                32470, data_out =   1, mem =  17
+# KERNEL: TIME =                32490, data_out =   1, mem =  17
+# KERNEL: TIME =                32510, data_out =   1, mem =  17
+# KERNEL: TIME =                32530, data_out =   1, mem =  17
+# KERNEL: TIME =                32550, data_out =   1, mem =  17
+# KERNEL: TIME =                32570, data_out =   1, mem =  17
+# KERNEL: TIME =                32590, data_out =   1, mem =  17
+# KERNEL: TIME =                32610, data_out =   1, mem =  17
+# KERNEL: TIME =                32630, data_out =   1, mem =  17
+# KERNEL: TIME =                32650, data_out =   1, mem =  17
+# KERNEL: TIME =                32670, data_out =   1, mem =  17
+# KERNEL: TIME =                32690, data_out =   1, mem =  17
+# KERNEL: TIME =                32710, data_out =   1, mem =  17
+# KERNEL: TIME =                32730, data_out =   1, mem =  17
+# KERNEL: TIME =                32750, data_out =   1, mem =  17
+# KERNEL: TIME =                32770, data_out =   1, mem =  17
+# KERNEL: TIME =                32790, data_out =   1, mem =  17
+# KERNEL: TIME =                32810, data_out =   1, mem =  17
+# KERNEL: TIME =                32830, data_out =   1, mem =  17
+# KERNEL: TIME =                32850, data_out =   1, mem =  17
+# KERNEL: TIME =                32870, data_out =   1, mem =  17
+# KERNEL: TIME =                32890, data_out =   1, mem =  17
+# KERNEL: TIME =                32910, data_out =   1, mem =  17
+# KERNEL: TIME =                32930, data_out =   1, mem =  17
+# KERNEL: TIME =                32950, data_out =   1, mem =  17
+# KERNEL: TIME =                32970, data_out =   1, mem =  17
+# KERNEL: TIME =                32990, data_out =   1, mem =  17
+# KERNEL: TIME =                33010, data_out =   1, mem =  17
+# KERNEL: TIME =                33030, data_out =   1, mem =  17
+# KERNEL: TIME =                33050, data_out =   1, mem =  17
+# KERNEL: TIME =                33070, data_out =   1, mem =  17
+# KERNEL: TIME =                33090, data_out =   1, mem =  17
+# KERNEL: TIME =                33110, data_out =   1, mem =  17
+# KERNEL: TIME =                33130, data_out =   1, mem =  17
+# KERNEL: TIME =                33150, data_out =   1, mem =  17
+# KERNEL: TIME =                33170, data_out =   1, mem =  17
+# KERNEL: TIME =                33190, data_out =   1, mem =  17
+# KERNEL: TIME =                33210, data_out =   1, mem =  17
+# KERNEL: TIME =                33230, data_out =   1, mem =  17
+# KERNEL: TIME =                33250, data_out =   1, mem =  17
+# KERNEL: TIME =                33270, data_out =   1, mem =  17
+# KERNEL: TIME =                33290, data_out =   1, mem =  17
+# KERNEL: TIME =                33310, data_out =   1, mem =  17
+# KERNEL: TIME =                33330, data_out =   1, mem =  17
+# KERNEL: TIME =                33350, data_out =   1, mem =  17
+# KERNEL: TIME =                33370, data_out =   1, mem =  17
+# KERNEL: TIME =                33390, data_out =   1, mem =  17
+# KERNEL: TIME =                33410, data_out =   1, mem =  17
+# KERNEL: TIME =                33430, data_out =   1, mem =  17
+# KERNEL: TIME =                33450, data_out =   1, mem =  17
+# KERNEL: TIME =                33470, data_out =   1, mem =  17
+# KERNEL: TIME =                33490, data_out =   1, mem =  17
+# KERNEL: TIME =                33510, data_out =   1, mem =  17
+# KERNEL: TIME =                33530, data_out =   1, mem =  17
+# KERNEL: TIME =                33550, data_out =   1, mem =  17
+# KERNEL: TIME =                33570, data_out =   1, mem =  17
+# KERNEL: TIME =                33590, data_out =   1, mem =  17
+# KERNEL: TIME =                33610, data_out =   1, mem =  17
+# KERNEL: TIME =                33630, data_out =   1, mem =  17
+# KERNEL: TIME =                33650, data_out =   1, mem =  17
+# KERNEL: TIME =                33670, data_out =   1, mem =  17
+# KERNEL: TIME =                33690, data_out =   1, mem =  17
+# KERNEL: TIME =                33710, data_out =   1, mem =  17
+# KERNEL: TIME =                33730, data_out =   1, mem =  17
+# KERNEL: TIME =                33750, data_out =   1, mem =  17
+# KERNEL: TIME =                33770, data_out =   1, mem =  17
+# KERNEL: TIME =                33790, data_out =   1, mem =  17
+# KERNEL: TIME =                33810, data_out =   1, mem =  17
+# KERNEL: TIME =                33830, data_out =   1, mem =  17
+# KERNEL: TIME =                33850, data_out =   1, mem =  17
+# KERNEL: TIME =                33870, data_out =   1, mem =  17
+# KERNEL: TIME =                33890, data_out =   1, mem =  17
+# KERNEL: TIME =                33910, data_out =   1, mem =  17
+# KERNEL: TIME =                33930, data_out =   1, mem =  17
+# KERNEL: TIME =                33950, data_out =   1, mem =  17
+# KERNEL: TIME =                33970, data_out =   1, mem =  17
+# KERNEL: TIME =                33990, data_out =   1, mem =  17
+# KERNEL: TIME =                34010, data_out =   1, mem =  17
+# KERNEL: TIME =                34030, data_out =   1, mem =  17
+# KERNEL: TIME =                34050, data_out =   1, mem =  17
+# KERNEL: TIME =                34070, data_out =   1, mem =  17
+# KERNEL: TIME =                34090, data_out =   1, mem =  17
+# KERNEL: TIME =                34110, data_out =   1, mem =  17
+# KERNEL: TIME =                34130, data_out =   1, mem =  17
+# KERNEL: TIME =                34150, data_out =   1, mem =  17
+# KERNEL: TIME =                34170, data_out =   1, mem =  17
+# KERNEL: TIME =                34190, data_out =   1, mem =  17
+# KERNEL: TIME =                34210, data_out =   1, mem =  17
+# KERNEL: TIME =                34230, data_out =   1, mem =  17
+# KERNEL: TIME =                34250, data_out =   1, mem =  17
+# KERNEL: TIME =                34270, data_out =   1, mem =  17
+# KERNEL: TIME =                34290, data_out =   1, mem =  17
+# KERNEL: TIME =                34310, data_out =   1, mem =  17
+# KERNEL: TIME =                34330, data_out =   1, mem =  17
+# KERNEL: TIME =                34350, data_out =   1, mem =  17
+# KERNEL: TIME =                34370, data_out =   1, mem =  17
+# KERNEL: TIME =                34390, data_out =   1, mem =  17
+# KERNEL: TIME =                34410, data_out =   1, mem =  17
+# KERNEL: TIME =                34430, data_out =   1, mem =  17
+# KERNEL: TIME =                34450, data_out =   1, mem =  17
+# KERNEL: TIME =                34470, data_out =   1, mem =  17
+# KERNEL: TIME =                34490, data_out =   1, mem =  17
+# KERNEL: TIME =                34510, data_out =   1, mem =  17
+# KERNEL: TIME =                34530, data_out =   1, mem =  17
+# KERNEL: TIME =                34550, data_out =   1, mem =  17
+# KERNEL: TIME =                34570, data_out =   1, mem =  17
+# KERNEL: TIME =                34590, data_out =   1, mem =  17
+# KERNEL: TIME =                34610, data_out =   1, mem =  17
+# KERNEL: TIME =                34630, data_out =   1, mem =  17
+# KERNEL: TIME =                34650, data_out =   1, mem =  17
+# KERNEL: TIME =                34670, data_out =   1, mem =  17
+# KERNEL: TIME =                34690, data_out =   1, mem =  17
+# KERNEL: TIME =                34710, data_out =   1, mem =  17
+# KERNEL: TIME =                34730, data_out =   1, mem =  17
+# KERNEL: TIME =                34750, data_out =   1, mem =  17
+# KERNEL: TIME =                34770, data_out =   1, mem =  17
+# KERNEL: TIME =                34790, data_out =   1, mem =  17
+# KERNEL: TIME =                34810, data_out =   1, mem =  17
+# KERNEL: TIME =                34830, data_out =   1, mem =  17
+# KERNEL: TIME =                34850, data_out =   1, mem =  17
+# KERNEL: TIME =                34870, data_out =   1, mem =  17
+# KERNEL: TIME =                34890, data_out =   1, mem =  17
+# KERNEL: TIME =                34910, data_out =   1, mem =  17
+# KERNEL: TIME =                34930, data_out =   1, mem =  17
+# KERNEL: TIME =                34950, data_out =   1, mem =  17
+# KERNEL: TIME =                34970, data_out =   1, mem =  17
+# KERNEL: TIME =                34990, data_out =   1, mem =  17
+# KERNEL: TIME =                35010, data_out =   1, mem =  17
+# KERNEL: TIME =                35030, data_out =   1, mem =  17
+# KERNEL: TIME =                35050, data_out =   1, mem =  17
+# KERNEL: TIME =                35070, data_out =   1, mem =  17
+# KERNEL: TIME =                35090, data_out =   1, mem =  17
+# KERNEL: TIME =                35110, data_out =   1, mem =  17
+# KERNEL: TIME =                35130, data_out =   1, mem =  17
+# KERNEL: TIME =                35150, data_out =   1, mem =  17
+# KERNEL: TIME =                35170, data_out =   1, mem =  17
+# KERNEL: TIME =                35190, data_out =   1, mem =  17
+# KERNEL: TIME =                35210, data_out =   1, mem =  17
+# KERNEL: TIME =                35230, data_out =   1, mem =  17
+# KERNEL: TIME =                35250, data_out =   1, mem =  17
+# KERNEL: TIME =                35270, data_out =   1, mem =  17
+# KERNEL: TIME =                35290, data_out =   1, mem =  17
+# KERNEL: TIME =                35310, data_out =   1, mem =  17
+# KERNEL: TIME =                35330, data_out =   1, mem =  17
+# KERNEL: TIME =                35350, data_out =   1, mem =  17
+# KERNEL: TIME =                35370, data_out =   1, mem =  17
+# KERNEL: TIME =                35390, data_out =   1, mem =  17
+# KERNEL: TIME =                35410, data_out =   1, mem =  17
+# KERNEL: TIME =                35430, data_out =   1, mem =  17
+# KERNEL: TIME =                35450, data_out =   1, mem =  17
+# KERNEL: TIME =                35470, data_out =   1, mem =  17
+# KERNEL: TIME =                35490, data_out =   1, mem =  17
+# KERNEL: TIME =                35510, data_out =   1, mem =  17
+# KERNEL: TIME =                35530, data_out =   1, mem =  17
+# KERNEL: TIME =                35550, data_out =   1, mem =  17
+# KERNEL: TIME =                35570, data_out =   1, mem =  17
+# KERNEL: TIME =                35590, data_out =   1, mem =  17
+# KERNEL: TIME =                35610, data_out =   1, mem =  17
+# KERNEL: TIME =                35630, data_out =   1, mem =  17
+# KERNEL: TIME =                35650, data_out =   1, mem =  17
+# KERNEL: TIME =                35670, data_out =   1, mem =  17
+# KERNEL: TIME =                35690, data_out =   1, mem =  17
+# KERNEL: TIME =                35710, data_out =   1, mem =  17
+# KERNEL: TIME =                35730, data_out =   1, mem =  17
+# KERNEL: TIME =                35750, data_out =   1, mem =  17
+# KERNEL: TIME =                35770, data_out =   1, mem =  17
+# KERNEL: TIME =                35790, data_out =   1, mem =  17
+# KERNEL: TIME =                35810, data_out =   1, mem =  17
+# KERNEL: TIME =                35830, data_out =   1, mem =  17
+# KERNEL: TIME =                35850, data_out =   1, mem =  17
+# KERNEL: TIME =                35870, data_out =   1, mem =  17
+# KERNEL: TIME =                35890, data_out =   1, mem =  17
+# KERNEL: TIME =                35910, data_out =   1, mem =  17
+# KERNEL: TIME =                35930, data_out =   1, mem =  17
+# KERNEL: TIME =                35950, data_out =   1, mem =  17
+# KERNEL: TIME =                35970, data_out =   1, mem =  17
+# KERNEL: TIME =                35990, data_out =   1, mem =  17
+# KERNEL: TIME =                36010, data_out =   1, mem =  17
+# KERNEL: TIME =                36030, data_out =   1, mem =  17
+# KERNEL: TIME =                36050, data_out =   1, mem =  17
+# KERNEL: TIME =                36070, data_out =   1, mem =  17
+# KERNEL: TIME =                36090, data_out =   1, mem =  17
+# KERNEL: TIME =                36110, data_out =   1, mem =  17
+# KERNEL: TIME =                36130, data_out =   1, mem =  17
+# KERNEL: TIME =                36150, data_out =   1, mem =  17
+# KERNEL: TIME =                36170, data_out =   1, mem =  17
+# KERNEL: TIME =                36190, data_out =   1, mem =  17
+# KERNEL: TIME =                36210, data_out =   1, mem =  17
+# KERNEL: TIME =                36230, data_out =   1, mem =  17
+# KERNEL: TIME =                36250, data_out =   1, mem =  17
+# KERNEL: TIME =                36270, data_out =   1, mem =  17
+# KERNEL: TIME =                36290, data_out =   1, mem =  17
+# KERNEL: TIME =                36310, data_out =   1, mem =  17
+# KERNEL: TIME =                36330, data_out =   1, mem =  17
+# KERNEL: TIME =                36350, data_out =   1, mem =  17
+# KERNEL: TIME =                36370, data_out =   1, mem =  17
+# KERNEL: TIME =                36390, data_out =   1, mem =  17
+# KERNEL: TIME =                36410, data_out =   1, mem =  17
+# KERNEL: TIME =                36430, data_out =   1, mem =  17
+# KERNEL: TIME =                36450, data_out =   1, mem =  17
+# KERNEL: TIME =                36470, data_out =   1, mem =  17
+# KERNEL: TIME =                36490, data_out =   1, mem =  17
+# KERNEL: TIME =                36510, data_out =   1, mem =  17
+# KERNEL: TIME =                36530, data_out =   1, mem =  17
+# KERNEL: TIME =                36550, data_out =   1, mem =  17
+# KERNEL: TIME =                36570, data_out =   1, mem =  17
+# KERNEL: TIME =                36590, data_out =   1, mem =  17
+# KERNEL: TIME =                36610, data_out =   1, mem =  17
+# KERNEL: TIME =                36630, data_out =   1, mem =  17
+# KERNEL: TIME =                36650, data_out =   1, mem =  17
+# KERNEL: TIME =                36670, data_out =   1, mem =  17
+# KERNEL: TIME =                36690, data_out =   1, mem =  17
+# KERNEL: TIME =                36710, data_out =   1, mem =  17
+# KERNEL: TIME =                36730, data_out =   1, mem =  17
+# KERNEL: TIME =                36750, data_out =   1, mem =  17
+# KERNEL: TIME =                36770, data_out =   1, mem =  17
+# KERNEL: TIME =                36790, data_out =   1, mem =  17
+# KERNEL: TIME =                36810, data_out =   1, mem =  17
+# KERNEL: TIME =                36830, data_out =   1, mem =  17
+# KERNEL: TIME =                36850, data_out =   1, mem =  17
+# KERNEL: TIME =                36870, data_out =   1, mem =  17
+# KERNEL: TIME =                36890, data_out =   1, mem =  17
+# KERNEL: TIME =                36910, data_out =   1, mem =  17
+# KERNEL: TIME =                36930, data_out =   1, mem =  17
+# KERNEL: TIME =                36950, data_out =   1, mem =  17
+# KERNEL: TIME =                36970, data_out =   1, mem =  17
+# KERNEL: TIME =                36990, data_out =   1, mem =  17
+# KERNEL: TIME =                37010, data_out =   1, mem =  17
+# KERNEL: TIME =                37030, data_out =   1, mem =  17
+# KERNEL: TIME =                37050, data_out =   1, mem =  17
+# KERNEL: TIME =                37070, data_out =   1, mem =  17
+# KERNEL: TIME =                37090, data_out =   1, mem =  17
+# KERNEL: TIME =                37110, data_out =   1, mem =  17
+# KERNEL: TIME =                37130, data_out =   1, mem =  17
+# KERNEL: TIME =                37150, data_out =   1, mem =  17
+# KERNEL: TIME =                37170, data_out =   1, mem =  17
+# KERNEL: TIME =                37190, data_out =   1, mem =  17
+# KERNEL: TIME =                37210, data_out =   1, mem =  17
+# KERNEL: TIME =                37230, data_out =   1, mem =  17
+# KERNEL: TIME =                37250, data_out =   1, mem =  17
+# KERNEL: TIME =                37270, data_out =   1, mem =  17
+# KERNEL: TIME =                37290, data_out =   1, mem =  17
+# KERNEL: TIME =                37310, data_out =   1, mem =  17
+# KERNEL: TIME =                37330, data_out =   1, mem =  17
+# KERNEL: TIME =                37350, data_out =   1, mem =  17
+# KERNEL: TIME =                37370, data_out =   1, mem =  17
+# KERNEL: TIME =                37390, data_out =   1, mem =  17
+# KERNEL: TIME =                37410, data_out =   1, mem =  17
+# KERNEL: TIME =                37430, data_out =   1, mem =  17
+# KERNEL: TIME =                37450, data_out =   1, mem =  17
+# KERNEL: TIME =                37470, data_out =   1, mem =  17
+# KERNEL: TIME =                37490, data_out =   1, mem =  17
+# KERNEL: TIME =                37510, data_out =   1, mem =  17
+# KERNEL: TIME =                37530, data_out =   1, mem =  17
+# KERNEL: TIME =                37550, data_out =   1, mem =  17
+# KERNEL: TIME =                37570, data_out =   1, mem =  17
+# KERNEL: TIME =                37590, data_out =   1, mem =  17
+# KERNEL: TIME =                37610, data_out =   1, mem =  17
+# KERNEL: TIME =                37630, data_out =   1, mem =  17
+# KERNEL: TIME =                37650, data_out =   1, mem =  17
+# KERNEL: TIME =                37670, data_out =   1, mem =  17
+# KERNEL: TIME =                37690, data_out =   1, mem =  17
+# KERNEL: TIME =                37710, data_out =   1, mem =  17
+# KERNEL: TIME =                37730, data_out =   1, mem =  17
+# KERNEL: TIME =                37750, data_out =   1, mem =  17
+# KERNEL: TIME =                37770, data_out =   1, mem =  17
+# KERNEL: TIME =                37790, data_out =   1, mem =  17
+# KERNEL: TIME =                37810, data_out =   1, mem =  17
+# KERNEL: TIME =                37830, data_out =   1, mem =  17
+# KERNEL: TIME =                37850, data_out =   1, mem =  17
+# KERNEL: TIME =                37870, data_out =   1, mem =  17
+# KERNEL: TIME =                37890, data_out =   1, mem =  17
+# KERNEL: TIME =                37910, data_out =   1, mem =  17
+# KERNEL: TIME =                37930, data_out =   1, mem =  17
+# KERNEL: TIME =                37950, data_out =   1, mem =  17
+# KERNEL: TIME =                37970, data_out =   1, mem =  17
+# KERNEL: TIME =                37990, data_out =   1, mem =  17
+# KERNEL: TIME =                38010, data_out =   1, mem =  17
+# KERNEL: TIME =                38030, data_out =   1, mem =  17
+# KERNEL: TIME =                38050, data_out =   1, mem =  17
+# KERNEL: TIME =                38070, data_out =   1, mem =  17
+# KERNEL: TIME =                38090, data_out =   1, mem =  17
+# KERNEL: TIME =                38110, data_out =   1, mem =  17
+# KERNEL: TIME =                38130, data_out =   1, mem =  17
+# KERNEL: TIME =                38150, data_out =   1, mem =  17
+# KERNEL: TIME =                38170, data_out =   1, mem =  17
+# KERNEL: TIME =                38190, data_out =   1, mem =  17
+# KERNEL: TIME =                38210, data_out =   1, mem =  17
+# KERNEL: TIME =                38230, data_out =   1, mem =  17
+# KERNEL: TIME =                38250, data_out =   1, mem =  17
+# KERNEL: TIME =                38270, data_out =   1, mem =  17
+# KERNEL: TIME =                38290, data_out =   1, mem =  17
+# KERNEL: TIME =                38310, data_out =   1, mem =  17
+# KERNEL: TIME =                38330, data_out =   1, mem =  17
+# KERNEL: TIME =                38350, data_out =   1, mem =  17
+# KERNEL: TIME =                38370, data_out =   1, mem =  17
+# KERNEL: TIME =                38390, data_out =   1, mem =  17
+# KERNEL: TIME =                38410, data_out =   1, mem =  17
+# KERNEL: TIME =                38430, data_out =   1, mem =  17
+# KERNEL: TIME =                38450, data_out =   1, mem =  17
+# KERNEL: TIME =                38470, data_out =   1, mem =  17
+# KERNEL: TIME =                38490, data_out =   1, mem =  17
+# KERNEL: TIME =                38510, data_out =   1, mem =  17
+# KERNEL: TIME =                38530, data_out =   1, mem =  17
+# KERNEL: TIME =                38550, data_out =   1, mem =  17
+# KERNEL: TIME =                38570, data_out =   1, mem =  17
+# KERNEL: TIME =                38590, data_out =   1, mem =  17
+# KERNEL: TIME =                38610, data_out =   1, mem =  17
+# KERNEL: TIME =                38630, data_out =   1, mem =  17
+# KERNEL: TIME =                38650, data_out =   1, mem =  17
+# KERNEL: TIME =                38670, data_out =   1, mem =  17
+# KERNEL: TIME =                38690, data_out =   1, mem =  17
+# KERNEL: TIME =                38710, data_out =   1, mem =  17
+# KERNEL: TIME =                38730, data_out =   1, mem =  17
+# KERNEL: TIME =                38750, data_out =   1, mem =  17
+# KERNEL: TIME =                38770, data_out =   1, mem =  17
+# KERNEL: TIME =                38790, data_out =   1, mem =  17
+# KERNEL: TIME =                38810, data_out =   1, mem =  17
+# KERNEL: TIME =                38830, data_out =   1, mem =  17
+# KERNEL: TIME =                38850, data_out =   1, mem =  17
+# KERNEL: TIME =                38870, data_out =   1, mem =  17
+# KERNEL: TIME =                38890, data_out =   1, mem =  17
+# KERNEL: TIME =                38910, data_out =   1, mem =  17
+# KERNEL: TIME =                38930, data_out =   1, mem =  17
+# KERNEL: TIME =                38950, data_out =   1, mem =  17
+# KERNEL: TIME =                38970, data_out =   1, mem =  17
+# KERNEL: TIME =                38990, data_out =   1, mem =  17
+# KERNEL: TIME =                39010, data_out =   1, mem =  17
+# KERNEL: TIME =                39030, data_out =   1, mem =  17
+# KERNEL: TIME =                39050, data_out =   1, mem =  17
+# KERNEL: TIME =                39070, data_out =   1, mem =  17
+# KERNEL: TIME =                39090, data_out =   1, mem =  17
+# KERNEL: TIME =                39110, data_out =   1, mem =  17
+# KERNEL: TIME =                39130, data_out =   1, mem =  17
+# KERNEL: TIME =                39150, data_out =   1, mem =  17
+# KERNEL: TIME =                39170, data_out =   1, mem =  17
+# KERNEL: TIME =                39190, data_out =   1, mem =  17
+# KERNEL: TIME =                39210, data_out =   1, mem =  17
+# KERNEL: TIME =                39230, data_out =   1, mem =  17
+# KERNEL: TIME =                39250, data_out =   1, mem =  17
+# KERNEL: TIME =                39270, data_out =   1, mem =  17
+# KERNEL: TIME =                39290, data_out =   1, mem =  17
+# KERNEL: TIME =                39310, data_out =   1, mem =  17
+# KERNEL: TIME =                39330, data_out =   1, mem =  17
+# KERNEL: TIME =                39350, data_out =   1, mem =  17
+# KERNEL: TIME =                39370, data_out =   1, mem =  17
+# KERNEL: TIME =                39390, data_out =   1, mem =  17
+# KERNEL: TIME =                39410, data_out =   1, mem =  17
+# KERNEL: TIME =                39430, data_out =   1, mem =  17
+# KERNEL: TIME =                39450, data_out =   1, mem =  17
+# KERNEL: TIME =                39470, data_out =   1, mem =  17
+# KERNEL: TIME =                39490, data_out =   1, mem =  17
+# KERNEL: TIME =                39510, data_out =   1, mem =  17
+# KERNEL: TIME =                39530, data_out =   1, mem =  17
+# KERNEL: TIME =                39550, data_out =   1, mem =  17
+# KERNEL: TIME =                39570, data_out =   1, mem =  17
+# KERNEL: TIME =                39590, data_out =   1, mem =  17
+# KERNEL: TIME =                39610, data_out =   1, mem =  17
+# KERNEL: TIME =                39630, data_out =   1, mem =  17
+# KERNEL: TIME =                39650, data_out =   1, mem =  17
+# KERNEL: TIME =                39670, data_out =   1, mem =  17
+# KERNEL: TIME =                39690, data_out =   1, mem =  17
+# KERNEL: TIME =                39710, data_out =   1, mem =  17
+# KERNEL: TIME =                39730, data_out =   1, mem =  17
+# KERNEL: TIME =                39750, data_out =   1, mem =  17
+# KERNEL: TIME =                39770, data_out =   1, mem =  17
+# KERNEL: TIME =                39790, data_out =   1, mem =  17
+# KERNEL: TIME =                39810, data_out =   1, mem =  17
+# KERNEL: TIME =                39830, data_out =   1, mem =  17
+# KERNEL: TIME =                39850, data_out =   1, mem =  17
+# KERNEL: TIME =                39870, data_out =   1, mem =  17
+# KERNEL: TIME =                39890, data_out =   1, mem =  17
+# KERNEL: TIME =                39910, data_out =   1, mem =  17
+# KERNEL: TIME =                39930, data_out =   1, mem =  17
+# KERNEL: TIME =                39950, data_out =   1, mem =  17
+# KERNEL: TIME =                39970, data_out =   1, mem =  17
+# KERNEL: TIME =                39990, data_out =   1, mem =  17
+# KERNEL: -------------- THE SIMUALTION FINISHED ------------
+# RUNTIME: Info: RUNTIME_0068 FIFO.v (228): $finish called.
+# KERNEL: Time: 400 ns,  Iteration: 0,  Instance: /tb_fifo_32,  Process: @INITIAL#138_1@.
+# KERNEL: stopped at time: 400 ns
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+run @900ns
+run 500 ns
+run 500 ns
+run 500 ns
+run
+endsim
+# VSIM: Simulation has finished.
+# Waveform file 'D:/Github_or_Gitlab/MY_Github/Engineering_Academics/Verilog_HDL_and_FPGA_Workshop/src/FIFO_Wave.awc' connected to 'D:/Github_or_Gitlab/MY_Github/Engineering_Academics/Verilog_HDL_and_FPGA_Workshop/src/FIFO_Wave.asdb'.
+# Adding file D:\Github_or_Gitlab\MY_Github\Engineering_Academics\Verilog_HDL_and_FPGA_Workshop\src\FIFO_Wave.asdb ... Done
+# Adding file D:\Github_or_Gitlab\MY_Github\Engineering_Academics\Verilog_HDL_and_FPGA_Workshop\src\FIFO_Wave.awc ... Done
+alog -O2 -sve -msg 5 -sv2k12 -work Workshop $dsn/src/HalfAdder.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: HA_tb.
+# $root top modules: divideBy_8_tb tb_fifo_32 dff tff_tb TrafficLights_tb Nand VectorExp mux_4to1_assign mux_4to1_UsingIf mux_4to1_UsingCase f_add rippe_adder sum mux8_usingCase forLoopexp up_down_counter up_counter FSM_2 TwoMHz_tb FSM_pattern_2 singlePortMem dualPortMem TB HA_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +w_nets +access +r +access +r+w HA_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.2 [s]
+# SLP: Finished : 0.2 [s]
+# SLP: 0 primitives and 2 (100.00%) other processes in SLP
+# SLP: 0 signals in SLP and 8 (100.00%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.2 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5370 kB (elbread=427 elab2=4808 kernel=134 sdf=0)
+# KERNEL: ASDB file was created in location D:\Github_or_Gitlab\MY_Github\Engineering_Academics\Verilog_HDL_and_FPGA_Workshop\src\wave.asdb
+#  15:59, 04 June 2023
+#  Simulation has been initialized
+# add wave -noreg {/HA_tb/t_a}
+# add wave -noreg {/HA_tb/t_b}
+# add wave -noreg {/HA_tb/t_sum}
+# add wave -noreg {/HA_tb/t_c}
+# VSIM: 4 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'D:/Github_or_Gitlab/MY_Github/Engineering_Academics/Verilog_HDL_and_FPGA_Workshop/src/wave.asdb'.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +w_nets +access +r +access +r+w HA_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+alog -O2 -sve -msg 5 -sv2k12 -work Workshop $dsn/src/HalfAdder.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: HA_tb.
+# $root top modules: divideBy_8_tb tb_fifo_32 dff tff_tb TrafficLights_tb Nand VectorExp mux_4to1_assign mux_4to1_UsingIf mux_4to1_UsingCase f_add rippe_adder sum mux8_usingCase forLoopexp up_down_counter up_counter FSM_2 TwoMHz_tb FSM_pattern_2 singlePortMem dualPortMem TB HA_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.2 [s]
+# SLP: Finished : 0.2 [s]
+# SLP: 0 primitives and 2 (100.00%) other processes in SLP
+# SLP: 0 signals in SLP and 8 (100.00%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.3 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5370 kB (elbread=427 elab2=4808 kernel=134 sdf=0)
+# KERNEL: ASDB file was created in location D:\Github_or_Gitlab\MY_Github\Engineering_Academics\Verilog_HDL_and_FPGA_Workshop\src\wave.asdb
+#  16:01, 04 June 2023
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'D:/Github_or_Gitlab/MY_Github/Engineering_Academics/Verilog_HDL_and_FPGA_Workshop/src/wave.asdb'.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+alog -O2 -sve -msg 5 -sv2k12 -work Workshop $dsn/src/FullAdder.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: FA_tb.
+# $root top modules: divideBy_8_tb tb_fifo_32 dff tff_tb TrafficLights_tb Nand VectorExp mux_4to1_assign mux_4to1_UsingIf mux_4to1_UsingCase f_add rippe_adder sum mux8_usingCase forLoopexp up_down_counter up_counter FSM_2 TwoMHz_tb FSM_pattern_2 singlePortMem dualPortMem TB HA_tb FA_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +w_nets +access +r +access +r+w FA_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.2 [s]
+# SLP: Finished : 0.3 [s]
+# SLP: 0 primitives and 2 (100.00%) other processes in SLP
+# SLP: 0 signals in SLP and 10 (100.00%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.3 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5372 kB (elbread=427 elab2=4810 kernel=134 sdf=0)
+# KERNEL: ASDB file was created in location D:\Github_or_Gitlab\MY_Github\Engineering_Academics\Verilog_HDL_and_FPGA_Workshop\src\wave.asdb
+#  16:02, 04 June 2023
+#  Simulation has been initialized
+# add wave -noreg {/FA_tb/t_a}
+# add wave -noreg {/FA_tb/t_b}
+# add wave -noreg {/FA_tb/t_cin}
+# add wave -noreg {/FA_tb/t_sum}
+# add wave -noreg {/FA_tb/t_cout}
+# VSIM: 5 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'D:/Github_or_Gitlab/MY_Github/Engineering_Academics/Verilog_HDL_and_FPGA_Workshop/src/wave.asdb'.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.

@@ -1,0 +1,34 @@
+# auto-generated
+[Libraries]
+work.files = [
+	'FA_Behavioral.vhd',
+	'FA_Behavioral_tb.vhd',
+	'FA_Dataflow.vhd',
+	'FA_Dataflow_tb.vhd',
+	'FA_Structural.vhd',
+	'FA_Structural_tb.vhd',
+	'HA_Behavioral.vhd',
+	'HA_Behavioral_tb.vhd',
+	'HA_Dataflow.vhd',
+	'HA_Dataflow_tb.vhd',
+	'HA_Dataflow_tb2.vhd',
+	'HA_Structural.vhd',
+	'HA_Structural_tb.vhd'
+]
+[libraries.work]
+files = [
+	'FA_Behavioral.vhd',
+	'FA_Behavioral_tb.vhd',
+	'FA_Dataflow.vhd',
+	'FA_Dataflow_tb.vhd',
+	'FA_Structural.vhd',
+	'FA_Structural_tb.vhd',
+	'HA_Behavioral.vhd',
+	'HA_Behavioral_tb.vhd',
+	'HA_Dataflow.vhd',
+	'HA_Dataflow_tb.vhd',
+	'HA_Dataflow_tb2.vhd',
+	'HA_Structural.vhd',
+	'HA_Structural_tb.vhd'
+]
+# auto-generated-end

@@ -1,0 +1,19 @@
+﻿<Project>
+  <ItemGroup>
+    <File Include="Demux_Behavioral.vhd" />
+    <File Include="Demux_Behavioral_tb.vhd" />
+    <File Include="Demux_Dataflow.vhd" />
+    <File Include="Demux_Dataflow_tb.vhd" />
+    <File Include="Demux_Structural.vhd" />
+    <File Include="Demux_Structural_tb.vhd" />
+    <File Include="Mux_Behavioral.vhd" />
+    <File Include="Mux_Behavioral_tb.vhd" />
+    <File Include="Mux_Dataflow.vhd" />
+    <File Include="Mux_Dataflow_tb.vhd" />
+    <File Include="Mux_Structural.vhd" />
+    <File Include="Mux_Structural_tb.vhd" />
+  </ItemGroup>
+  <PropertyGroup>
+    <HardwareStartPath>EXP_2.vhd</HardwareStartPath>
+  </PropertyGroup>
+</Project>

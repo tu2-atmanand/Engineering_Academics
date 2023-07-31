@@ -1,0 +1,28 @@
+# auto-generated
+[Libraries]
+work.files = [
+	'DFF.vhd',
+	'DFF_tb.vhd',
+	'EXP_4.vhd',
+	'EXP_4_tb.vhd',
+	'JKFF.vhd',
+	'JKFF_tb.vhd',
+	'SRFF.vhd',
+	'SRFF_tb.vhd',
+	'TFF.vhd',
+	'TFF_tb.vhd'
+]
+[libraries.work]
+files = [
+	'DFF.vhd',
+	'DFF_tb.vhd',
+	'EXP_4.vhd',
+	'EXP_4_tb.vhd',
+	'JKFF.vhd',
+	'JKFF_tb.vhd',
+	'SRFF.vhd',
+	'SRFF_tb.vhd',
+	'TFF.vhd',
+	'TFF_tb.vhd'
+]
+# auto-generated-end

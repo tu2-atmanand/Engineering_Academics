@@ -1,0 +1,76 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=4
+Current Config=compile
+[Configurations]
+compile=Workshop
+[Library]
+Workshop=.\Workshop\Workshop.lib
+[$LibMap$]
+Workshop=.
+Active_lib=
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VERILOG
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+[Files]
+/DivideBy_8.v=-1
+/FIFO.v=-1
+/NandGate.v=-1
+/HalfAdder.v=-1
+/FullAdder.v=-1
+/VectorExample.v=-1
+/Multiplexer.v=-1
+/FAusing2HA.v=-1
+/RippleCounter.v=-1
+/BehavioralSum.v=-1
+/Mux8_UsingCase.v=-1
+/ForExample.v=-1
+/UpCounter.v=-1
+/CounterPattern.v=-1
+/FlipFlop.v=-1
+/TwoMHzWaveform.v=-1
+/FSM_PatternMatching.v=-1
+/FSM_PatternMatching2.v=-1
+/Array.v=-1
+/DualPortMemory.v=-1
+/WalllaceTreeMultiplier.v=-1
+/TrafficLight.v=-1
+/temp.v=-1
+/Encoder.asf=-1
+/FIFO_Wave.asdb=-1
+/FIFO_Wave.awc=-1
+[Files.Data]
+.\src\DivideBy_8.v=Verilog Source Code
+.\src\FIFO.v=Verilog Source Code
+.\src\NandGate.v=Verilog Source Code
+.\src\HalfAdder.v=Verilog Source Code
+.\src\FullAdder.v=Verilog Source Code
+.\src\VectorExample.v=Verilog Source Code
+.\src\Multiplexer.v=Verilog Source Code
+.\src\FAusing2HA.v=Verilog Source Code
+.\src\RippleCounter.v=Verilog Source Code
+.\src\BehavioralSum.v=Verilog Source Code
+.\src\Mux8_UsingCase.v=Verilog Source Code
+.\src\ForExample.v=Verilog Source Code
+.\src\UpCounter.v=Verilog Source Code
+.\src\CounterPattern.v=Verilog Source Code
+.\src\FlipFlop.v=Verilog Source Code
+.\src\TwoMHzWaveform.v=Verilog Source Code
+.\src\FSM_PatternMatching.v=Verilog Source Code
+.\src\FSM_PatternMatching2.v=Verilog Source Code
+.\src\Array.v=Verilog Source Code
+.\src\DualPortMemory.v=Verilog Source Code
+.\src\WalllaceTreeMultiplier.v=Verilog Source Code
+.\src\TrafficLight.v=Verilog Source Code
+.\src\temp.v=Verilog Source Code
+.\src\Encoder.asf=State Diagram
+.\src\FIFO_Wave.asdb=Accelerated Waveform File
+.\src\FIFO_Wave.awc=Accelerated Waveform Configuration
+[HierarchyViewer]
+HierarchyInformation=
+ShowHide=ShowTopLevel
+Selected=

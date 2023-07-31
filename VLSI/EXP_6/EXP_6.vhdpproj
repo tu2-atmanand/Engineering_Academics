@@ -1,0 +1,17 @@
+﻿<Project>
+  <ItemGroup>
+    <File Include="EXP_6.vhd" />
+    <File Include="EXP_6_tb.vhd" />
+    <File Include="PIPO.vhd" />
+    <File Include="PIPO_tb.vhd" />
+    <File Include="PISO.vhd" />
+    <File Include="PISO_tb.vhd" />
+    <File Include="SIPO.vhd" />
+    <File Include="SIPO_tb.vhd" />
+    <File Include="SISO.vhd" />
+    <File Include="SISO_tb.vhd" />
+  </ItemGroup>
+  <PropertyGroup>
+    <HardwareStartPath>EXP_6.vhd</HardwareStartPath>
+  </PropertyGroup>
+</Project>

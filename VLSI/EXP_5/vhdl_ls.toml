@@ -1,0 +1,16 @@
+# auto-generated
+[Libraries]
+work.files = [
+	'EXP_5.vhd',
+	'EXP_5_tb.vhd',
+	'UpDownCounterBehav.vhd',
+	'UpDownCounterBehav_tb.vhd'
+]
+[libraries.work]
+files = [
+	'EXP_5.vhd',
+	'EXP_5_tb.vhd',
+	'UpDownCounterBehav.vhd',
+	'UpDownCounterBehav_tb.vhd'
+]
+# auto-generated-end

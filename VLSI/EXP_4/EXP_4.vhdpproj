@@ -1,0 +1,17 @@
+﻿<Project>
+  <ItemGroup>
+    <File Include="DFF.vhd" />
+    <File Include="DFF_tb.vhd" />
+    <File Include="EXP_4.vhd" />
+    <File Include="EXP_4_tb.vhd" />
+    <File Include="JKFF.vhd" />
+    <File Include="JKFF_tb.vhd" />
+    <File Include="SRFF.vhd" />
+    <File Include="SRFF_tb.vhd" />
+    <File Include="TFF.vhd" />
+    <File Include="TFF_tb.vhd" />
+  </ItemGroup>
+  <PropertyGroup>
+    <HardwareStartPath>EXP_4.vhd</HardwareStartPath>
+  </PropertyGroup>
+</Project>

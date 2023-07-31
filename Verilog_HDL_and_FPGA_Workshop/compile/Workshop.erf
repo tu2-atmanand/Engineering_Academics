@@ -1,0 +1,23 @@
+MESSAGE "Pass 1. Scanning modules hierarchy."
+MESSAGE_SP VCP2113 "Module \$root found in current working library."
+BEGINPROGRESS Compiling...
+UPDATEPROGRESS 35
+MESSAGE "Pass 2. Processing instantiations."
+UPDATEPROGRESS 45
+MESSAGE "Pass 3. Processing behavioral statements."
+UPDATEPROGRESS 80
+MESSAGE "Running Optimizer."
+MESSAGE "ELB/DAG code generating."
+MESSAGE_SP VCP2113 "Module \$root found in current working library."
+UPDATEPROGRESS 83
+UPDATEPROGRESS 86
+UPDATEPROGRESS 90
+UPDATEPROGRESS 93
+UPDATEPROGRESS 96
+UPDATEPROGRESS 100
+MESSAGE "Unit top modules: FA_tb."
+MESSAGE "$root top modules: divideBy_8_tb tb_fifo_32 dff tff_tb TrafficLights_tb Nand VectorExp mux_4to1_assign mux_4to1_UsingIf mux_4to1_UsingCase f_add rippe_adder sum mux8_usingCase forLoopexp up_down_counter up_counter FSM_2 TwoMHz_tb FSM_pattern_2 singlePortMem dualPortMem TB HA_tb FA_tb."
+ENDPROGRESS Compiling...
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time: 0[s]."
+WARNING ALOG: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."
+MESSAGE "done"

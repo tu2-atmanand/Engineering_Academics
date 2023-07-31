@@ -1,0 +1,19 @@
+﻿<Project>
+  <ItemGroup>
+    <File Include="Decoder_Behavioural.vhd" />
+    <File Include="Decoder_Behavioural_tb.vhd" />
+    <File Include="Decoder_Dataflow.vhd" />
+    <File Include="Decoder_Dataflow_tb.vhd" />
+    <File Include="Decoder_Structural.vhd" />
+    <File Include="Decoder_Structural_tb.vhd" />
+    <File Include="Encoder_Behavioral.vhd" />
+    <File Include="Encoder_Behavioral_tb.vhd" />
+    <File Include="Encoder_Dataflow.vhd" />
+    <File Include="Encoder_Dataflow_tb.vhd" />
+    <File Include="Encoder_Structural.vhd" />
+    <File Include="Encoder_Structural_tb.vhd" />
+  </ItemGroup>
+  <PropertyGroup>
+    <HardwareStartPath>Decoder_Behavioural_tb.vhd</HardwareStartPath>
+  </PropertyGroup>
+</Project>
